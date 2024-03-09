@@ -1,0 +1,17 @@
+ - acessar: https://www.mysql.com/downloads/
+
+ - clicar em: MySQL Community (GPL) Downloads
+
+ - clicar em: MySQL Installer for Windows
+
+ - baixar a versão completa: Windows (x86, 32-bit), MSI Installer
+
+ - iniciar a instalação, selecionar "full", tudo next, colocar senha e executar
+
+-configurar as variaveis de ambiente para poder executar pelo terminal:
+
+copiar  caminnho "C:\Program Files\MySQL\MySQL Server 8.0\bin"
+abrir as variaveis de ambiente
+em variaveis do sistema
+em "path" clicar em editar
+novo e colar o endereço

@@ -1,0 +1,7 @@
+SQL e MySQL são conceitos diferentes.
+
+SQL (Structured Query Language): É uma linguagem de consulta estruturada utilizada para gerenciar bancos de dados relacionais. O SQL é uma linguagem padronizada, com uma sintaxe bem definida, que permite aos usuários realizar diversas operações em bancos de dados, como consultas, inserções, atualizações e exclusões de dados.
+
+MySQL: É um sistema de gerenciamento de banco de dados (SGBD) relacional open-source que utiliza a linguagem SQL para manipular dados. Portanto, o MySQL é um software que implementa o SQL para criar, modificar e administrar bancos de dados relacionais. Ele oferece uma plataforma para armazenamento e recuperação eficientes de dados, além de suportar diversas funcionalidades e recursos avançados para gerenciar bancos de dados.
+
+Em resumo, enquanto o SQL é uma linguagem de consulta estruturada utilizada para manipular bancos de dados relacionais, o MySQL é um sistema de gerenciamento de banco de dados relacional que implementa o SQL para armazenar, recuperar e gerenciar dados. Outros exemplos de sistemas de gerenciamento de banco de dados que utilizam SQL incluem PostgreSQL, SQL Server, Oracle, SQLite, entre outros.

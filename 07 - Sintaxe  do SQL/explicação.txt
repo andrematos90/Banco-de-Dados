@@ -1,0 +1,69 @@
+Aqui está uma lista  de alguns dos principais comandos SQL que você pode utilizar ao trabalhar com o MySQL:
+
+CREATE DATABASE: Cria um novo banco de dados.
+CREATE DATABASE nome_do_banco_de_dados;
+
+
+DROP DATABASE: Remove um banco de dados existente.
+DROP DATABASE nome_do_banco_de_dados;
+
+USE: Seleciona um banco de dados específico para uso.
+USE nome_do_banco_de_dados;
+
+CREATE TABLE: Cria uma nova tabela no banco de dados.
+CREATE TABLE nome_da_tabela (
+    coluna1 tipo_de_dado,
+    coluna2 tipo_de_dado,
+    ...
+);
+
+
+ALTER TABLE: Modifica uma tabela existente, por exemplo, adicionando ou removendo colunas.
+ALTER TABLE nome_da_tabela
+
+ADD coluna_nova tipo_de_dado;
+
+DROP TABLE: Remove uma tabela existente.
+DROP TABLE nome_da_tabela;
+
+SELECT: Recupera dados de uma ou mais tabelas.
+SELECT coluna1, coluna2
+
+FROM nome_da_tabela
+WHERE condição;
+
+INSERT INTO: Insere novos registros em uma tabela.
+INSERT INTO nome_da_tabela (coluna1, coluna2)
+VALUES (valor1, valor2);
+
+UPDATE: Atualiza os valores em registros existentes.
+UPDATE nome_da_tabela
+SET coluna1 = novo_valor
+WHERE condição;
+
+
+DELETE FROM: Remove registros de uma tabela.
+DELETE FROM nome_da_tabela
+WHERE condição;
+JOIN: Combina dados de duas ou mais tabelas com base em uma condição relacionada.
+SELECT coluna1, coluna2
+FROM tabela1
+INNER JOIN tabela2 ON tabela1.coluna_comum = tabela2.coluna_comum;
+
+
+GROUP BY: Agrupa os resultados de uma consulta com base em valores de uma ou mais colunas.
+SELECT coluna, FUNÇÃO_DE_AGRUPAMENTO(outra_coluna)
+FROM tabela
+GROUP BY coluna;
+
+ORDER BY: Classifica os resultados de uma consulta por uma ou mais colunas.
+SELECT coluna1, coluna2
+FROM tabela
+ORDER BY coluna1 ASC, coluna2 DESC;
+
+LIMIT: Restringe o número de linhas retornadas por uma consulta.
+SELECT coluna1, coluna2
+FROM tabela
+LIMIT 10;
+
+Esses são apenas alguns dos principais comandos SQL que você pode utilizar no MySQL. Existem muitos outros comandos e funcionalidades disponíveis, dependendo das necessidades específicas do seu projeto.

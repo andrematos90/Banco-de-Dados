@@ -1,0 +1,26 @@
+A importação de banco de dados refere-se ao processo de transferir dados de um arquivo ou de um banco de dados externo para um banco de dados em um sistema de gerenciamento de banco de dados (SGBD). Isso pode envolver a importação de estrutura de tabelas, dados, configurações e outros elementos do banco de dados.
+
+Existem várias razões pelas quais você pode precisar importar um banco de dados:
+
+Migração de Dados: Quando você está transferindo dados de um sistema antigo para um novo, seja por atualização de software, mudança de plataforma ou migração para um novo ambiente de hospedagem.
+
+Backup e Restauração: Ao restaurar um backup de banco de dados, você está essencialmente importando os dados e a estrutura do banco de dados para o sistema de gerenciamento de banco de dados.
+
+Integração de Dados: Em cenários onde você está consolidando dados de diferentes fontes em um único banco de dados.
+
+Atualização de Dados: Quando você precisa atualizar periodicamente os dados em seu banco de dados a partir de fontes externas, como arquivos CSV, planilhas, feeds RSS, etc.
+
+Desenvolvimento e Teste: Importação de dados de produção para ambientes de desenvolvimento ou teste para simular um ambiente semelhante ao ambiente de produção.
+
+O método exato de importação de um banco de dados pode variar dependendo do SGBD específico que você está usando e do formato dos dados de origem. Alguns SGBDs fornecem ferramentas integradas ou suporte para importação de dados de formatos comuns, enquanto em outros casos, pode ser necessário usar ferramentas de terceiros ou escrever scripts personalizados para realizar a importação.
+
+
+Importando na Prática: 
+
+● Obs: faça o download dos arquivos do curso!
+● Vamos primeiramente acessar o MySQL pelo terminal;
+● Agora devemos criar um banco, pode ser empresa o nome;
+● Selecionar o banco com: USE <nome>
+● E depois utilizar o comando: source <arquivo>
+● O comando USE faz o banco de dados ser o principal no momento;
+● Precisamos estar com o terminal na pasta do arquivo;

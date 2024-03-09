@@ -1,0 +1,16 @@
+Para executar o MySQL no terminal, siga estas etapas:
+
+Abra o terminal do seu sistema operacional. No Windows, você pode usar o Prompt de Comando ou o PowerShell. No macOS e Linux, você pode usar o Terminal.
+
+Depois de abrir o terminal, digite o seguinte comando e pressione Enter para iniciar o servidor MySQL:
+
+
+mysql -u nome_de_usuário -p
+
+Substitua "nome_de_usuário" pelo nome de usuário que você deseja usar para se conectar ao MySQL. Pressione Enter após inserir o comando.
+
+Após pressionar Enter, você será solicitado a inserir a senha do usuário. Digite a senha e pressione Enter novamente.
+
+Se as credenciais estiverem corretas, você será conectado ao servidor MySQL e verá um prompt de comando do MySQL, indicado por mysql>.
+
+Agora você pode começar a interagir com o MySQL através do terminal, executando comandos SQL, criando bancos de dados, tabelas, consultas e realizando outras operações de gerenciamento de dados. Quando terminar, você pode sair do MySQL digitando exit e pressionando Enter. Isso desconectará você do servidor MySQL e o retornará ao terminal padrão do sistema operacional.
