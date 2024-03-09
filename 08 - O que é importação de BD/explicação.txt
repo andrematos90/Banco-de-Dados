@@ -18,9 +18,18 @@ O método exato de importação de um banco de dados pode variar dependendo do S
 Importando na Prática: 
 
 ● Obs: faça o download dos arquivos do curso!
+baixar em https://github.com/matheusbattisti/curso_sql/blob/main/1_intro/empresa.sql
+
 ● Vamos primeiramente acessar o MySQL pelo terminal;
-● Agora devemos criar um banco, pode ser empresa o nome;
+- abrir o terminal na pasta aonde esta o arquivo
+- rodar o mySQL "mysql -u root -p nomedobanco " para acessar o banco
+ou
+
+●devemos criar um banco, pode ser empresa o nome;
 ● Selecionar o banco com: USE <nome>
+
 ● E depois utilizar o comando: source <arquivo>
+- "source empresa.sql" para criar as tabelas
+
 ● O comando USE faz o banco de dados ser o principal no momento;
 ● Precisamos estar com o terminal na pasta do arquivo;
