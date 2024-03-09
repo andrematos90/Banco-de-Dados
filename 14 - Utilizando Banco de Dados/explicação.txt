@@ -1,0 +1,17 @@
+O comando USE no MySQL é utilizado para selecionar um banco de dados específico para ser usado durante a sessão atual. Ele permite que você mude o contexto para um banco de dados diferente, o que significa que todas as consultas subsequentes serão executadas nesse banco de dados.
+
+A sintaxe básica do comando USE é a seguinte:
+
+
+USE nome_do_banco_de_dados;
+Substitua nome_do_banco_de_dados pelo nome do banco de dados que você deseja selecionar.
+
+Por exemplo, se você tem um banco de dados chamado "meu_banco_de_dados" e deseja começar a trabalhar com ele, você usaria o comando USE da seguinte forma:
+
+
+USE meu_banco_de_dados;
+
+
+Após executar este comando, todas as consultas subsequentes serão aplicadas ao banco de dados "meu_banco_de_dados" até que você mude para outro banco de dados ou termine a sessão.
+
+É importante observar que o comando USE não exige permissões especiais. Contudo, você só pode selecionar bancos de dados aos quais você tem permissão de acesso. Se o banco de dados não existir ou se você não tiver permissão para acessá-lo, o MySQL retornará um erro.

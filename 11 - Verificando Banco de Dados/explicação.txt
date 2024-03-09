@@ -1,0 +1,16 @@
+Para verificar se um banco de dados existe no MySQL, você pode usar a instrução SHOW DATABASES. Esta instrução lista todos os bancos de dados disponíveis no servidor MySQL. Aqui está como você pode usá-lo:
+
+
+SHOW DATABASES;
+Isso retornará uma lista de todos os bancos de dados disponíveis no servidor MySQL. Se o banco de dados que você está procurando estiver na lista, isso significa que ele existe.
+
+Se você quiser verificar se um banco de dados específico existe, você pode combinar a instrução SHOW DATABASES com uma cláusula LIKE para procurar um padrão específico no nome do banco de dados. Por exemplo, se você quiser verificar se existe um banco de dados chamado "meu_banco_de_dados", você pode fazer:
+
+SHOW DATABASES LIKE 'meu_banco_de_dados';
+Se o banco de dados existir, ele será listado nos resultados. Se não existir, você não verá nenhum resultado.
+
+É importante observar que para ver os bancos de dados, você precisa ter permissões adequadas no MySQL. Se você não tiver permissões para ver todos os bancos de dados, você só verá os bancos de dados aos quais tem acesso.
+
+
+SHOW TABLES; 
+mostra as tabelas do banco depois de selecionalo com "USE nome_do_banco";
