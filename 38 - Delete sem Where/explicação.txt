@@ -1,0 +1,6 @@
+É possível usar a instrução DELETE sem uma cláusula WHERE, mas é importante entender que isso deletará todos os registros da tabela especificada. Aqui está um exemplo:
+
+DELETE FROM pessoas;
+Essa instrução irá deletar todos os registros da tabela "pessoas". Tenha em mente que esse tipo de ação é irreversível e pode resultar na perda permanente de dados. Portanto, é crucial ter certeza de que é isso que você deseja fazer antes de executar a instrução.
+
+É recomendável usar essa abordagem apenas se você tiver certeza de que deseja remover todos os registros da tabela. Em muitos casos, é mais comum usar uma cláusula WHERE para especificar critérios de exclusão e deletar apenas os registros que atendem a esses critérios, tornando a operação mais seletiva e menos arriscada.

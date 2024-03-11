@@ -1,0 +1,13 @@
+Se você quiser selecionar apenas algumas colunas específicas, em vez de todas as colunas, você pode listar os nomes das colunas desejadas em vez de usar o asterisco (*). Por exemplo:
+
+
+SELECT nome, idade, email FROM clientes;
+
+Neste exemplo, você está selecionando apenas as colunas "nome", "idade" e "email" da tabela "clientes".
+
+Lembre-se de substituir "clientes" pelo nome da sua tabela.
+
+
+
+
+

@@ -1,0 +1,36 @@
+A atualização de dados em um banco de dados SQL é realizada usando a instrução UPDATE. Esta operação é usada para modificar os valores de uma ou mais colunas em um ou mais registros existentes em uma tabela. A atualização de dados é uma parte essencial da manipulação de dados em bancos de dados relacionais e é frequentemente usada para corrigir erros, aplicar alterações ou atualizar informações.
+
+Aqui está uma explicação sobre como a atualização de dados funciona e como você pode usá-la:
+
+Sintaxe Básica: A sintaxe básica da instrução UPDATE é a seguinte:
+
+UPDATE nome_da_tabela
+SET nome_da_coluna1 = valor1, nome_da_coluna2 = valor2, ...
+
+WHERE condição;
+
+nome_da_tabela: O nome da tabela na qual você deseja realizar a atualização.
+
+SET nome_da_coluna1 = valor1, nome_da_coluna2 = valor2, ...: Especifica as colunas que você deseja atualizar e os novos valores que deseja atribuir a elas.
+WHERE condição: Opcionalmente, você pode especificar uma condição para limitar quais registros serão atualizados. Se você omitir a cláusula WHERE, todos os registros na tabela serão atualizados.
+Atualização Condicional: Você pode usar a cláusula WHERE para aplicar a atualização apenas a registros que atendam a determinados critérios. Isso permite que você atualize seletivamente apenas os registros desejados.
+
+Atualização de Múltiplas Colunas: Você pode atualizar os valores de várias colunas em um único comando UPDATE, atribuindo novos valores a cada uma delas na cláusula SET.
+
+Atualização de Múltiplos Registros: Você pode atualizar os valores de vários registros de uma vez, desde que eles atendam à condição especificada na cláusula WHERE.
+
+Transação Atômica: A operação de atualização é normalmente executada como uma transação atômica, o que significa que ela é executada completamente ou não é executada de forma alguma. Isso garante a consistência dos dados no banco de dados.
+
+Cuidado com a Condição: Ao usar a cláusula WHERE, verifique se a condição é cuidadosamente avaliada para evitar a atualização acidental de registros indesejados.
+
+A atualização de dados é uma operação comum e essencial em bancos de dados relacionais, permitindo que você mantenha seus dados atualizados e precisos ao longo do tempo. No entanto, é importante usá-la com cuidado para garantir que apenas os registros corretos sejam atualizados e que a integridade dos dados seja preservada.
+
+
+Outro Exemplo:
+
+
+SET SQL_SAFE_UPDATES = 0; desativa  //Desativa o modo de atualização segura temporariamente, necessario quando nao se tem uma chave primaria
+
+UPDATE pessoas SET nome = "andre" WHERE nome = "André" ;
+
+SET SQL_SAFE_UPDATES = 1; ativa novamente.

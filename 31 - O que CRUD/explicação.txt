@@ -1,0 +1,11 @@
+CRUD é um acrônimo que representa as quatro operações básicas de manipulação de dados em sistemas de banco de dados relacionais e aplicações web:
+
+Create (Criar): A operação Create envolve a criação de novos registros ou entradas em um banco de dados. Isso geralmente é feito por meio da inserção de novos dados em uma tabela de banco de dados.
+
+Read (Ler): A operação Read envolve a recuperação de dados existentes de um banco de dados. Isso inclui consultas e pesquisas que permitem extrair informações específicas de uma ou mais tabelas de banco de dados.
+
+Update (Atualizar): A operação Update envolve a modificação de dados existentes em um banco de dados. Isso pode incluir a alteração de valores de campos específicos em um registro, a atualização de múltiplos registros com base em critérios de pesquisa, etc.
+
+Delete (Excluir): A operação Delete envolve a remoção de registros ou entradas existentes de um banco de dados. Isso é feito removendo um registro específico ou um conjunto de registros com base em critérios de pesquisa.
+
+Essas operações formam a base para a maioria das interações de manipulação de dados em sistemas de banco de dados relacionais e são amplamente utilizadas em desenvolvimento de software, especialmente em aplicações web e sistemas de gerenciamento de conteúdo. O CRUD é uma parte fundamental do desenvolvimento de aplicativos e fornece uma estrutura simples e intuitiva para interagir com dados armazenados em um banco de dados.

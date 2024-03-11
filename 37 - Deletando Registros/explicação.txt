@@ -1,0 +1,10 @@
+Para deletar registros de uma tabela em um banco de dados SQL, você pode usar a instrução DELETE FROM. Aqui está um exemplo básico de como deletar registros da tabela "pessoas" onde o nome seja "Elisa":
+
+DELETE FROM pessoas
+WHERE nome = 'Elisa';
+
+Neste exemplo:
+
+DELETE FROM pessoas: Indica que você deseja deletar registros da tabela "pessoas".
+WHERE nome = 'Elisa': Especifica a condição que os registros devem atender para serem deletados. Neste caso, estamos deletando registros onde o valor da coluna "nome" é igual a "Elisa".
+

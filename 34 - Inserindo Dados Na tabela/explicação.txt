@@ -1,0 +1,16 @@
+Para inserir dados em uma tabela em um banco de dados SQL, você pode usar a instrução INSERT INTO. Aqui está um exemplo básico de como inserir uma nova linha de dados na tabela "clientes":
+
+
+INSERT INTO clientes (nome, idade, email) VALUES ('João Silva', 30, 'joao@email.com');
+Neste exemplo:
+
+INSERT INTO clientes: Indica que você deseja inserir dados na tabela "clientes".
+(nome, idade, email): Especifica as colunas às quais você está inserindo dados.
+VALUES ('João Silva', 30, 'joao@email.com'): Especifica os valores que você deseja inserir para cada uma das colunas correspondentes. No exemplo, 'João Silva' será inserido na coluna "nome", 30 na coluna "idade" e 'joao@email.com' na coluna "email".
+Se a sua tabela tiver uma coluna com uma chave primária auto-incrementada, como um ID, você geralmente não precisa fornecer um valor para essa coluna, pois o banco de dados gerará automaticamente um valor para você. Por exemplo:
+
+
+INSERT INTO clientes (nome, idade, email) VALUES ('Maria Oliveira', 25, 'maria@email.com');
+Neste caso, o banco de dados gerará automaticamente o valor para a coluna ID (supondo que seja uma chave primária auto-incrementada) ao inserir esta linha de dados na tabela "clientes".
+
+Lembre-se de ajustar os nomes das tabelas e das colunas conforme necessário para o seu banco de dados específico.

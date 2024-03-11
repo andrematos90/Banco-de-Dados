@@ -1,0 +1,11 @@
+Para selecionar todos os dados de uma tabela em um banco de dados SQL, você pode usar a instrução SELECT sem especificar critérios de pesquisa. Aqui está um exemplo básico de como selecionar todos os dados da tabela "clientes":
+
+
+SELECT * FROM clientes;
+
+Neste exemplo:
+
+SELECT *: Indica que você deseja selecionar todas as colunas da tabela.
+FROM clientes: Indica que você está selecionando os dados da tabela "clientes".
+
+Ao executar esta instrução SQL, você obterá todos os dados armazenados na tabela "clientes".
