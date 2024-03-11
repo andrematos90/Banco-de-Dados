@@ -1,0 +1,11 @@
+CREATE TABLE servidores(
+    nome VARCHAR(100),
+    espaco_disco INT,
+    ligado BOOL,
+)
+
+
+
+INSERT INTO servidores (nome, espaco_disco, ligado) 
+VALUES ( "servidor 1", 1000, 0),
+       ("servidor 2", 500, 1)

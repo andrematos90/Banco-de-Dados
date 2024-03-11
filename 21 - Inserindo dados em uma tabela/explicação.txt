@@ -1,0 +1,31 @@
+
+Para inserir dados em uma tabela em um banco de dados SQL, você pode usar a instrução SQL INSERT INTO. Aqui está um exemplo básico de como inserir uma linha de dados na tabela "Clientes" que criamos anteriormente:
+
+INSERT INTO Clientes (nome, email, telefone) VALUES ('João Silva', 'joao@email.com', '123456789');
+
+Neste exemplo:
+
+INSERT INTO Clientes:
+ Esta parte da instrução indica que você deseja inserir dados na tabela "Clientes".
+
+(nome, email, telefone): 
+Aqui você lista os nomes das colunas para as quais está inserindo dados. Isso é opcional, mas é uma prática recomendada para tornar o código mais legível e evitar erros.
+
+VALUES ('João Silva', 'joao@email.com', '123456789'):
+ Esta parte da instrução especifica os valores que você deseja inserir para cada coluna. Cada valor é correspondente à coluna na mesma posição na lista de colunas.
+
+Você pode inserir várias linhas de dados de uma vez, fornecendo múltiplos conjuntos de valores separados por vírgulas:
+
+INSERT INTO Clientes (nome, email, telefone) VALUES
+    ('Maria Santos', 'maria@email.com', '987654321'),
+    ('Carlos Oliveira', 'carlos@email.com', '456123789');
+
+Depois de executar a instrução INSERT INTO, os dados serão adicionados à tabela especificada no banco de dados. Certifique-se de que os tipos de dados dos valores que você está inserindo correspondam aos tipos de dados das colunas na tabela.
+
+OBS: valores de texto são inseridos entre aspas.
+
+outro exemplo:
+
+INSERT INTO produtos (nome, sku, informacoes) VALUES 
+ ("PlayStation", "PLAY5", "Video Game da Marca Sony"),
+ ("Super Nintendo", "SNES", "Vide Game da Marca Nintendo")

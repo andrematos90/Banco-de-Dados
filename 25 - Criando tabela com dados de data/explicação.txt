@@ -1,0 +1,28 @@
+Para criar uma tabela com datas em um banco de dados SQL, você pode usar um dos tipos de dados de data mencionados anteriormente, como DATE, DATETIME, TIMESTAMP, ou qualquer outro tipo específico oferecido pelo seu sistema de gerenciamento de banco de dados (SGBD). Aqui está um exemplo básico de como criar uma tabela com uma coluna de data usando o tipo DATE:
+
+
+CREATE TABLE ExemploDatas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    data_registro DATE
+);
+
+Neste exemplo:
+
+CREATE TABLE ExemploDatas: Esta parte da instrução indica que você deseja criar uma tabela chamada "ExemploDatas".
+(id INT AUTO_INCREMENT PRIMARY KEY): Aqui estamos criando uma coluna chamada "id" que é uma chave primária e é incrementada automaticamente a cada novo registro.
+(data_registro DATE): Aqui estamos criando uma coluna chamada "data_registro" do tipo DATE, que será usada para armazenar datas.
+Depois de executar essa instrução SQL, você terá uma tabela chamada "ExemploDatas" com uma coluna de data chamada "data_registro". Você pode ajustar a estrutura da tabela e as definições das colunas de acordo com as necessidades específicas do seu aplicativo.
+
+
+outro exemplo:
+
+criando tabela:
+
+CREATE TABLE aniversarios(
+aniversariante VARCHAR(100),
+dia DATE
+);
+
+inserindo dados:
+
+INSERT INTO aniversarios (aniversariante, dia) VALUES ("André", "1990-04-28");

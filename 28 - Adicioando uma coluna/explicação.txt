@@ -1,0 +1,28 @@
+Para adicionar uma nova coluna a uma tabela existente em um banco de dados SQL, você pode usar a instrução ALTER TABLE. Aqui está um exemplo básico de como adicionar uma nova coluna chamada "idade" à tabela "clientes":
+
+
+ALTER TABLE clientes
+ADD idade INT;
+
+Neste exemplo:
+
+ALTER TABLE clientes: Indica que você deseja alterar a estrutura da tabela "clientes".
+ADD idade INT: Adiciona a nova coluna "idade" à tabela "clientes", com o tipo de dado INT (inteiro).
+Se você quiser adicionar a nova coluna em uma posição específica na tabela, você pode usar a cláusula AFTER ou FIRST. Aqui está um exemplo:
+
+
+ALTER TABLE clientes
+ADD idade INT AFTER nome;
+Neste exemplo, a nova coluna "idade" será adicionada após a coluna "nome" na tabela "clientes".
+
+Lembre-se de substituir "clientes" pelo nome da sua tabela e "idade" pelo nome da nova coluna que você deseja adicionar, e ajustar o tipo de dado conforme necessário para atender aos requisitos do seu aplicativo.
+
+
+outro exemplo:
+
+ALTER TABLE aniversarios ADD COLUMN idade INT;
+
+
+
+
+

@@ -1,0 +1,19 @@
+Para criar uma tabela no MySQL, você pode usar a linguagem SQL (Structured Query Language). Aqui está um exemplo simples de como criar uma tabela chamada "Clientes" com algumas colunas:
+
+
+CREATE TABLE Clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    telefone VARCHAR(15)
+);
+
+Neste exemplo:
+
+CREATE TABLE: Esta é a instrução SQL que cria uma nova tabela.
+Clientes: É o nome da tabela que estamos criando.
+(id INT AUTO_INCREMENT PRIMARY KEY): Esta é a definição da coluna "id", que é do tipo INT (número inteiro) e será a chave primária da tabela. AUTO_INCREMENT significa que o MySQL irá gerar automaticamente valores para essa coluna, começando de 1 e incrementando por 1 para cada nova linha inserida. PRIMARY KEY indica que essa coluna será a chave primária da tabela, garantindo unicidade e identificação única de cada registro.
+(nome VARCHAR(100)): Esta é a definição da coluna "nome", que é do tipo VARCHAR (cadeia de caracteres) com comprimento máximo de 100 caracteres.
+(email VARCHAR(100)): Definição da coluna "email", também do tipo VARCHAR com comprimento máximo de 100 caracteres.
+(telefone VARCHAR(15)): Definição da coluna "telefone", do tipo VARCHAR com comprimento máximo de 15 caracteres.
+Você pode ajustar os tipos de dados e os comprimentos das colunas de acordo com os requisitos específicos do seu banco de dados. Depois de executar essa instrução SQL, a tabela "Clientes" será criada no seu banco de dados MySQL.

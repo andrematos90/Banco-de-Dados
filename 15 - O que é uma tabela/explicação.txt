@@ -1,0 +1,5 @@
+Uma tabela, em um banco de dados relacional, é uma estrutura organizada em linhas e colunas que armazena dados relacionados. Cada linha em uma tabela representa uma entrada de dados individual e é frequentemente referida como uma tupla ou registro. Cada coluna em uma tabela representa um atributo específico desses dados, também conhecido como campo.
+
+Por exemplo, imagine uma tabela de "Funcionários" em um banco de dados de uma empresa. Cada linha nesta tabela pode representar um funcionário individual, enquanto as colunas podem incluir informações como o ID do funcionário, nome, cargo, salário, data de contratação, etc.
+
+As tabelas são a unidade básica de armazenamento de dados em um banco de dados relacional e são fundamentais para organizar e acessar os dados de forma eficiente. Elas fornecem uma estrutura lógica para armazenar e manipular informações, facilitando consultas, atualizações e análises de dados.

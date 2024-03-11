@@ -1,0 +1,4 @@
+CREATE TABLE produtos(
+    nome VARCHAR(50), 
+    sku CHAR(5), i
+    nformacoes MEDIUMTEXT);

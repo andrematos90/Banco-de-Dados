@@ -1,0 +1,23 @@
+Os tipos numéricos mais comuns em SQL incluem:
+
+INT: Armazena números inteiros. Dependendo do sistema de gerenciamento de banco de dados (SGBD), pode variar em tamanho, mas geralmente é de 4 bytes, permitindo valores na faixa de -2.147.483.648 a 2.147.483.647 em sistemas de 32 bits, ou valores na faixa de -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807 em sistemas de 64 bits.
+
+BIGINT: Armazena números inteiros maiores que o tipo INT. Geralmente, é de 8 bytes, permitindo valores na faixa de -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807.
+
+FLOAT: Armazena números de ponto flutuante de precisão simples, geralmente de 4 bytes. Pode armazenar números com uma precisão de cerca de 7 dígitos decimais.
+
+DOUBLE: Armazena números de ponto flutuante de precisão dupla, geralmente de 8 bytes. Tem maior precisão do que o tipo FLOAT, permitindo armazenar números com uma precisão de cerca de 15 dígitos decimais.
+
+DECIMAL(p, s): Armazena números decimais com precisão fixa, onde 'p' especifica o número total de dígitos e 's' especifica o número de dígitos após o ponto decimal.
+
+NUMERIC(p, s): Semelhante ao tipo DECIMAL, armazena números decimais com precisão fixa, onde 'p' especifica o número total de dígitos e 's' especifica o número de dígitos após o ponto decimal.
+
+BIT: Armazena valores binários, geralmente representados como 0 e 1 ou falso e verdadeiro. No entanto, o tratamento exato dos valores pode variar dependendo do sistema de gerenciamento de banco de dados (SGBD). É útil para armazenar dados booleanos ou flags.
+
+TINYINT: É um tipo de dados numérico inteiro pequeno, geralmente de 1 byte de tamanho. Pode armazenar valores inteiros na faixa de -128 a 127 (se assinado) ou 0 a 255 (se não assinado).
+
+BOOL ou BOOLEAN: Em alguns sistemas de gerenciamento de banco de dados (SGBD), o tipo de dados BOOLEAN é uma alternativa para armazenar valores booleanos, representando verdadeiro ou falso. Em outros sistemas, o tipo BOOL pode ser um sinônimo para TINYINT(1), permitindo armazenar valores 0 (falso) ou 1 (verdadeiro).
+
+Esses tipos de dados numéricos adicionais são úteis para representar valores binários ou booleanos de forma eficiente, dependendo das necessidades específicas do seu banco de dados e do sistema de gerenciamento de banco de dados que você está usando.
+
+Esses são os tipos numéricos mais comuns encontrados em SQL. A escolha do tipo numérico depende da faixa e da precisão dos valores que você deseja armazenar.

@@ -1,0 +1,6 @@
+Para excluir uma tabela no MySQL, você pode usar a instrução SQL DROP TABLE. Aqui está um exemplo de como excluir a tabela "Clientes" que criamos anteriormente:
+
+DROP TABLE Clientes;
+Esta instrução SQL DROP TABLE remove permanentemente a tabela especificada do banco de dados. Certifique-se de estar completamente seguro de que deseja excluir a tabela, pois esta operação não pode ser desfeita e todos os dados contidos nela serão perdidos.
+
+É importante usar com cautela e verificar se a exclusão da tabela é realmente necessária, pois uma vez que a tabela é excluída, você não pode recuperar os dados a menos que tenha um backup disponível.

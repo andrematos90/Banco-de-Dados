@@ -1,0 +1,16 @@
+Os tipos de dados de texto mais comuns em SQL incluem:
+
+CHAR(n): Armazena uma string de caracteres de tamanho fixo, onde 'n' especifica o número máximo de caracteres. Se o tamanho da string for menor que 'n', espaços em branco são adicionados para preencher.
+
+VARCHAR(n): Armazena uma string de caracteres de tamanho variável, onde 'n' especifica o número máximo de caracteres permitidos. A quantidade de espaço de armazenamento usado depende do comprimento real dos dados.
+
+TEXT: Armazena uma string de texto longa, sem limite de tamanho específico. Pode conter grandes quantidades de texto, até o limite máximo permitido pelo sistema de gerenciamento de banco de dados.
+
+BLOB: Armazena dados binários de tamanho variável (Binary Large Object), como imagens, vídeos, arquivos de áudio, etc. Assim como o tipo VARCHAR, não tem um limite específico de tamanho.
+
+
+MEDIUMTEXT: Armazena uma string de texto um pouco mais longa que o TINYTEXT, com um comprimento máximo de cerca de 16 milhões de caracteres. É útil quando você precisa armazenar strings de texto maiores do que o TINYTEXT, mas menores do que o TEXT.
+
+LONGTEXT: Armazena uma string de texto muito longa, com um comprimento máximo de cerca de 4 bilhões de caracteres. É o tipo de texto mais longo disponível e é ideal para armazenar grandes blocos de texto, como documentos extensos ou conteúdo de páginas da web.
+
+Esses são os tipos de dados de texto e de dados binários mais comuns em SQL. A escolha entre eles depende das necessidades específicas do seu aplicativo e do tamanho e tipo de dados que você deseja armazenar.

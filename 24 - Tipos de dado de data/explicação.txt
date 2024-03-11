@@ -1,0 +1,26 @@
+Os tipos de dados de data e hora mais comuns em SQL incluem:
+OBS: datas são inseridas entre aspas.
+
+DATE: Armazena uma data, no formato 'YYYY-MM-DD'. Este tipo de dado é usado para representar datas sem informações de hora.
+
+TIME: Armazena um horário, no formato 'HH:MM:SS'. Este tipo de dado é usado para representar horários sem informações de data.
+
+DATETIME: Armazena tanto data quanto hora, no formato 'YYYY-MM-DD HH:MM:SS'. Este tipo de dado combina os tipos DATE e TIME em uma única coluna.
+
+TIMESTAMP: Armazena uma data e hora, mas com algumas diferenças sutis em comparação com DATETIME. Um TIMESTAMP é armazenado como o número de segundos desde a "Época Unix" (1 de janeiro de 1970, 00:00:00 UTC). A precisão pode variar dependendo do sistema de gerenciamento de banco de dados (SGBD), mas geralmente é preciso até o segundo.
+
+YEAR: Armazena um ano, no formato 'YYYY'. Este tipo de dado é usado especificamente para armazenar anos.
+
+Estes são os tipos de dados de data e hora mais comuns encontrados em SQL. A escolha entre eles depende das necessidades específicas do seu aplicativo e do tipo de dados que você precisa armazenar.
+
+Além dos tipos de dados de data e hora mencionados anteriormente, alguns sistemas de gerenciamento de banco de dados (SGBD) podem oferecer tipos de dados específicos adicionais para lidar com diferentes aspectos de data e hora. Aqui estão alguns exemplos:
+
+YEAR_MONTH: Armazena um ano e um mês, no formato 'YYYY-MM'. Este tipo de dado é útil quando você precisa armazenar apenas informações de ano e mês juntas.
+
+DAY_HOUR: Armazena um dia e uma hora, no formato 'DD HH:MM:SS'. Este tipo de dado é útil quando você precisa armazenar apenas informações de dia e hora juntas.
+
+YEAR_MONTH_DAY: Armazena uma data, no formato 'YYYY-MM-DD'. Este tipo de dado é semelhante ao tipo DATE, mas pode ser oferecido como uma opção adicional em alguns sistemas de gerenciamento de banco de dados.
+
+TIME_ZONE: Em alguns SGBDs, pode haver tipos de dados específicos para lidar com informações de fuso horário, permitindo armazenar informações de data e hora com referência a um fuso horário específico.
+
+Estes são exemplos adicionais de tipos de dados de data e hora que podem estar disponíveis em determinados sistemas de gerenciamento de banco de dados. A disponibilidade e a implementação específica desses tipos de dados podem variar entre os diferentes SGBDs.

@@ -1,0 +1,16 @@
+Na linguagem SQL (Structured Query Language), existem diversos tipos de dados que podem ser utilizados para definir os campos em uma tabela. Os tipos de dados mais comuns incluem:
+
+INT: Armazena números inteiros, como 1, 2, -5, etc.
+FLOAT: Armazena números decimais de precisão simples.
+DOUBLE: Armazena números decimais de precisão dupla.
+DECIMAL: Armazena números decimais com precisão fixa.
+CHAR: Armazena strings de comprimento fixo, ocupando espaço extra com espaços em branco se necessário.
+VARCHAR: Armazena strings de comprimento variável, ocupando apenas o espaço necessário para o valor armazenado.
+TEXT: Armazena strings de texto longas.
+DATE: Armazena datas, no formato 'YYYY-MM-DD'.
+TIME: Armazena horários, no formato 'HH:MM:SS'.
+DATETIME: Armazena datas e horários combinados, no formato 'YYYY-MM-DD HH:MM:SS'.
+BOOLEAN: Armazena valores booleanos, verdadeiro (true) ou falso (false).
+
+
+Esses são alguns dos tipos de dados mais comuns encontrados na SQL, mas dependendo do sistema de gerenciamento de banco de dados (SGBD) que você está utilizando, pode haver outros tipos de dados específicos disponíveis, bem como variações ou extensões desses tipos básicos.
