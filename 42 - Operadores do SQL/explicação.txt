@@ -1,0 +1,76 @@
+
+O SQL (Structured Query Language) oferece diversos operadores que permitem realizar operações de consulta, manipulação e comparação de dados em um banco de dados. Aqui estão alguns dos operadores mais comuns:
+
+Operadores Aritméticos: Utilizados para realizar operações matemáticas.
+
++ (adição)
+- (subtração)
+* (multiplicação)
+/ (divisão)
+
+Operadores de Comparação: Utilizados para comparar valores.
+
+= (igual a)
+!= ou <> (diferente de)
+< (menor que)
+> (maior que)
+<= (menor ou igual a)
+>= (maior ou igual a)
+
+Operadores Lógicos: Utilizados para combinar condições lógicas.
+
+AND (e)
+OR (ou)
+NOT (não)
+
+Operadores de Concatenação: Utilizados para concatenar strings.
+
+|| (para sistemas que suportam concatenação de strings)
+CONCAT() (função para concatenar strings)
+Operadores de Intervalo: Utilizados para verificar se um valor está dentro de um intervalo.
+
+BETWEEN (dentro de um intervalo)
+NOT BETWEEN (não dentro de um intervalo)
+Operadores de Pesquisa de Padrões: Utilizados para realizar buscas de padrões em strings.
+
+LIKE (corresponde a um padrão)
+NOT LIKE (não corresponde a um padrão)
+% (corresponde a zero ou mais caracteres)
+_ (corresponde a um único caractere)
+Operadores de Conjunto: Utilizados para combinar resultados de múltiplas consultas.
+
+UNION (combina resultados de duas ou mais consultas)
+UNION ALL (combina resultados de duas ou mais consultas, incluindo duplicatas)
+INTERSECT (retorna registros presentes em ambas as consultas)
+EXCEPT ou MINUS (retorna registros presentes na primeira consulta, mas não na segunda)
+Esses são alguns dos operadores mais comuns em SQL, mas há outros mais específicos ou menos utilizados em determinados sistemas de banco de dados. Dominar o uso desses operadores é essencial para escrever consultas SQL eficientes e precisas.
+
+
+EXEMPLOS:
+
+Aqui está um exemplo de SELECT utilizando cada um dos operadores mencionados:
+
+Operadores Aritméticos:
+SELECT preco_produto * quantidade AS total FROM produtos;
+
+Operadores de Comparação:
+SELECT * FROM funcionarios WHERE salario > 5000;
+
+Operadores Lógicos:
+SELECT * FROM clientes WHERE idade >= 18 AND idade <= 30;
+
+Operadores de Concatenação:
+SELECT CONCAT(nome, ' ', sobrenome) AS nome_completo FROM usuarios;
+
+Operadores de Intervalo:
+SELECT * FROM vendas WHERE data_venda BETWEEN '2022-01-01' AND '2022-12-31';
+
+Operadores de Pesquisa de Padrões:
+SELECT * FROM produtos WHERE nome_produto LIKE '%camiseta%';
+
+Operadores de Conjunto:
+SELECT nome FROM clientes
+UNION
+SELECT nome FROM fornecedores;
+
+Esses exemplos demonstram como cada operador pode ser utilizado em uma instrução SELECT para realizar diferentes tipos de consultas em um banco de dados. Lembre-se de adaptar os nomes das tabelas e colunas de acordo com a estrutura do seu próprio banco de dados.

@@ -1,0 +1,48 @@
+Os operadores lógicos em SQL são utilizados para combinar ou modificar condições lógicas em uma cláusula WHERE, HAVING ou JOIN. Aqui estão os principais operadores lógicos em SQL:
+
+AND: Retorna verdadeiro se todas as condições especificadas forem verdadeiras.
+Exemplo:
+SELECT * FROM clientes WHERE idade > 18 AND cidade = 'São Paulo';
+
+
+OR: Retorna verdadeiro se pelo menos uma das condições especificadas for verdadeira.
+Exemplo:
+SELECT * FROM produtos WHERE categoria = 'Eletrônicos' OR categoria = 'Livros';
+
+
+NOT: Inverte o valor lógico de uma condição, retornando verdadeiro se a condição for falsa e vice-versa.
+Exemplo:
+SELECT * FROM funcionarios WHERE NOT departamento = 'TI';
+
+
+IN: Verifica se um valor está contido em uma lista de valores.
+Exemplo:
+SELECT * FROM alunos WHERE idade IN (18, 19, 20);
+
+
+NOT IN: Verifica se um valor não está contido em uma lista de valores.
+Exemplo:
+SELECT * FROM produtos WHERE categoria NOT IN ('Eletrônicos', 'Livros');
+
+BETWEEN: Verifica se um valor está dentro de um intervalo especificado.
+Exemplo:
+SELECT * FROM vendas WHERE data BETWEEN '2022-01-01' AND '2022-12-31';
+
+LIKE: Utilizado para comparar valores de string usando caracteres curinga (% para zero ou mais caracteres e _ para um único caractere).
+Exemplo:
+SELECT * FROM clientes WHERE nome LIKE 'João%';
+
+IS NULL: Verifica se uma coluna tem valor nulo.
+Exemplo:
+SELECT * FROM alunos WHERE nota IS NULL;
+
+IS NOT NULL: Verifica se uma coluna não tem valor nulo.
+Exemplo:
+SELECT * FROM funcionarios WHERE salario IS NOT NULL;
+
+Esses operadores lógicos permitem criar condições mais complexas em consultas SQL para filtrar os dados de acordo com critérios específicos.
+
+
+
+
+

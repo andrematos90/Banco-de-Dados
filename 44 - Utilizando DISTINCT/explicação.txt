@@ -1,0 +1,42 @@
+A palavra-chave DISTINCT em SQL é usada junto com a instrução SELECT para remover duplicatas dos resultados de uma consulta. Isso significa que ele retorna apenas valores únicos para uma determinada coluna ou combinação de colunas.
+
+A sintaxe básica para usar DISTINCT em uma consulta SELECT é a seguinte:
+
+
+SELECT DISTINCT coluna1, coluna2, ...
+FROM tabela;
+
+Isso retornará apenas valores únicos para as colunas especificadas na consulta SELECT.
+
+Por exemplo, considere uma tabela chamada "produtos" com uma coluna "categoria" que contém vários valores repetidos:
+
++----+-------------+
+| id | categoria   |
++----+-------------+
+| 1  | Eletrônicos |
+| 2  | Livros      |
+| 3  | Eletrônicos |
+| 4  | Roupas      |
+| 5  | Livros      |
+| 6  | Eletrônicos |
++----+-------------+
+
+Se quisermos listar todas as categorias únicas da tabela, podemos usar DISTINCT da seguinte maneira:
+
+SELECT DISTINCT categoria
+FROM produtos;
+
+
+Isso retornará:
+
++-------------+
+| categoria   |
++-------------+
+| Eletrônicos |
+| Livros      |
+| Roupas      |
++-------------+
+
+Observe que apenas os valores únicos da coluna "categoria" são retornados, removendo quaisquer duplicatas que possam existir na tabela original.
+
+O uso de DISTINCT é útil quando você precisa remover duplicatas dos resultados de uma consulta, especialmente ao trabalhar com grandes conjuntos de dados ou ao realizar análises de dados onde a contagem precisa de valores únicos é importante.

@@ -1,0 +1,23 @@
+Aqui estão alguns exemplos de uso do operador lógico OR em consultas SQL:
+
+Selecionar registros que atendem a pelo menos uma das condições:
+SELECT * FROM produtos WHERE categoria = 'Eletrônicos' OR categoria = 'Livros';
+Este comando SQL selecionará todos os produtos que pertencem à categoria "Eletrônicos" OU à categoria "Livros".
+
+
+Combinação de condições em cláusulas WHERE:
+SELECT * FROM funcionarios WHERE departamento = 'Vendas' OR departamento = 'Marketing';
+Este comando SQL selecionará todos os funcionários que trabalham no departamento de Vendas OU no departamento de Marketing.
+
+Selecionar registros que atendem a várias condições diferentes:
+SELECT * FROM pedidos WHERE status = 'Em andamento' OR status = 'Atrasado' OR status = 'Em revisão';
+Este comando SQL selecionará todos os pedidos que estão em andamento, atrasados ou em revisão.
+
+Combinação de condições em cláusulas JOIN:
+SELECT clientes.nome, pedidos.data
+FROM clientes
+JOIN pedidos ON clientes.id = pedidos.cliente_id
+WHERE clientes.cidade = 'São Paulo' OR clientes.cidade = 'Rio de Janeiro';
+Este comando SQL selecionará os nomes dos clientes e as datas de pedidos para os clientes que residem em São Paulo OU no Rio de Janeiro.
+
+Esses são apenas alguns exemplos de como o operador lógico OR pode ser usado em consultas SQL para combinar condições e filtrar os dados de acordo com critérios específicos.

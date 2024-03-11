@@ -1,0 +1,8 @@
+- em "https://github.com/datacharmer/test_db"
+- baixar o banco clicando em "code" fazer " Download Zip"
+- Descompactar e abrir terminal na pasta descompactada
+- conectar com o banco, comando "mysql -u root" se o banco tem senha é  
+"mysql  -u root -p" e inserir a senha.
+- criar a base de dados com o comando "CREATE DATABASE nomedabase;"
+- comando "USE employees;" para usar o banco criado.
+- comando "source employees.sql" para importar para o banco criado o todo o banco baixado.

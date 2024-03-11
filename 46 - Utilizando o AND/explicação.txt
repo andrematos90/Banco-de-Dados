@@ -1,0 +1,24 @@
+Aqui estão alguns exemplos de uso do operador lógico AND em consultas SQL:
+
+Selecionar registros que atendem a múltiplas condições:
+SELECT * FROM clientes WHERE idade > 18 AND cidade = 'São Paulo';
+Este comando SQL selecionará todos os clientes cuja idade é superior a 18 e que residem em São Paulo.
+
+Combinar mais de duas condições:
+SELECT * FROM produtos WHERE categoria = 'Eletrônicos' AND preco > 500 AND estoque > 0;
+Este comando SQL selecionará todos os produtos na categoria "Eletrônicos" que têm um preço superior a 500 e têm um estoque disponível.
+
+
+Combinar diferentes tipos de condições:
+SELECT * FROM funcionarios WHERE departamento = 'TI' AND salario > 5000 AND idade < 40;
+Este comando SQL selecionará todos os funcionários que trabalham no departamento de TI, ganham mais de 5000 e têm menos de 40 anos de idade.
+
+
+Combinar condições em cláusulas JOIN:
+SELECT clientes.nome, pedidos.data
+FROM clientes
+JOIN pedidos ON clientes.id = pedidos.cliente_id
+WHERE clientes.idade > 18 AND pedidos.status = 'Entregue';
+Este comando SQL selecionará os nomes dos clientes e as datas de pedidos para os clientes com mais de 18 anos cujos pedidos foram entregues.
+
+Esses são apenas alguns exemplos de como o operador lógico AND pode ser usado em consultas SQL para combinar múltiplas condições e filtrar os dados de acordo com critérios específicos.

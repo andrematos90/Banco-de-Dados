@@ -1,0 +1,19 @@
+se houver erro na hora de importar o banco:
+
+- abrir o arquivo employees.sql no vscode
+- abrir a pasta aonde esta o banco, copiar o caminho
+- colar o caminho no vscode  entre:
+
+ SELECT 'LOADING departments' as 'INFO'
+ C:/Development/repositories/Banco de Dados/Hora de Codar/SQL do básico ao avançado/test_db-masters/test_db-master
+ SELECT 'LOADING employees' as 'INFO';
+
+obs: inverter a contra barra no caminho,
+colocar o caminho entre todos os SELECT
+
+- no Workbench, abrir a opção "serve >> data import"
+
+- mudar a opção para "Import from Self-Contained File", e encontrar o arquivo.sql
+dar start Import
+
+- demora para criar

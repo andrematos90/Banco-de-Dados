@@ -1,0 +1,43 @@
+Para ordenar os resultados de uma consulta SQL, você pode usar a cláusula ORDER BY. Esta cláusula permite que você especifique a ordem na qual as linhas serão retornadas na consulta, com base nos valores de uma ou mais colunas.
+
+A sintaxe básica da cláusula ORDER BY é a seguinte:
+SELECT coluna1, coluna2, ...
+FROM tabela
+ORDER BY coluna1 [ASC|DESC], coluna2 [ASC|DESC], ...;
+Aqui está o que cada parte da cláusula faz:
+
+ORDER BY: Indica que os resultados devem ser ordenados.
+coluna1, coluna2, ...: As colunas pelas quais os resultados devem ser ordenados.
+[ASC|DESC]: Especifica a direção da ordenação. ASC (Ascending) para ordenação ascendente (padrão) e DESC (Descending) para ordenação descendente.
+
+
+Exemplos:
+
+Ordenar por uma única coluna em ordem ascendente:
+SELECT nome, idade, salario
+FROM funcionarios
+ORDER BY nome;
+
+Ordenar por uma única coluna em ordem descendente:
+SELECT nome, idade, salario
+FROM funcionarios
+ORDER BY idade DESC;
+
+Ordenar por várias colunas:
+
+SELECT nome, idade, salario
+FROM funcionarios
+ORDER BY salario DESC, idade ASC;
+
+Ordenar por uma expressão:
+SELECT nome, idade, ano_atual - ano_nascimento AS idade_atual
+FROM pessoas
+ORDER BY idade_atual DESC;
+
+Esses são apenas alguns exemplos de como você pode usar a cláusula ORDER BY para ordenar os resultados de uma consulta SQL de acordo com os critérios desejados.
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+Para criar uma exclusão com o operador lógico NOT em SQL, você pode usar a cláusula WHERE em conjunto com NOT para especificar uma condição que deseja negar. Aqui está um exemplo de como fazer isso:
+
+Suponha que temos uma tabela de funcionários e queremos excluir todos os funcionários que não trabalham no departamento de TI. Podemos usar a cláusula WHERE com NOT para excluir esses funcionários:
+
+DELETE FROM funcionarios
+WHERE NOT departamento = 'TI';
+Neste exemplo, a condição NOT departamento = 'TI' irá excluir todos os funcionários que não trabalham no departamento de TI. Em outras palavras, apenas os funcionários que não pertencem ao departamento de TI serão excluídos.
+
+É importante observar que o uso do operador NOT pode ser útil em várias situações para realizar exclusões com base em condições negativas. Certifique-se de ajustar a condição conforme necessário para atender aos requisitos específicos do seu caso de uso.
