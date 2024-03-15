@@ -1,0 +1,25 @@
+A cláusula IN em SQL é usada para filtrar os resultados de uma consulta com base em uma lista de valores. Ela permite selecionar linhas que correspondam a qualquer valor na lista especificada. Aqui está um exemplo de como usar a cláusula IN:
+
+Suponha que temos uma tabela chamada Produtos e queremos selecionar os produtos que tenham o ID 1, 3 ou 5. Podemos fazer isso usando a cláusula IN da seguinte maneira:
+
+SELECT *
+FROM Produtos
+WHERE ID IN (1, 3, 5);
+
+Neste exemplo:
+
+Produtos é o nome da tabela da qual estamos selecionando os dados.
+ID é a coluna na tabela Produtos que estamos comparando com os valores da lista.
+(1, 3, 5) é a lista de valores com os quais estamos comparando. Essa lista pode conter qualquer número de valores separados por vírgulas.
+
+Esta consulta retornará todas as linhas da tabela Produtos onde o valor na coluna ID corresponder a 1, 3 ou 5.
+
+Você também pode usar a cláusula IN com subconsultas, o que pode ser útil quando você deseja selecionar valores de outra tabela. Por exemplo:
+
+SELECT *
+FROM Produtos
+WHERE Categoria IN (SELECT Categoria FROM Categorias WHERE Nome = 'Eletrônicos');
+
+Neste exemplo, estamos selecionando todos os produtos que pertencem à categoria 'Eletrônicos', comparando a coluna Categoria da tabela Produtos com os valores resultantes da subconsulta que seleciona as categorias com o nome 'Eletrônicos' na tabela Categorias.
+
+Em resumo, a cláusula IN é uma maneira útil de selecionar itens de uma lista em uma consulta SQL, seja com valores literais ou com resultados de subconsultas. Ela oferece uma maneira eficiente de filtrar dados com base em múltiplos valores específicos.

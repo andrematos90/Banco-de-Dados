@@ -1,0 +1,54 @@
+Em SQL, um alias é um nome alternativo que pode ser atribuído a uma tabela ou coluna em uma consulta. Esses aliases são úteis para facilitar a leitura e a compreensão das consultas, especialmente em consultas complexas ou quando o nome original da tabela ou coluna é longo ou difícil de lembrar. Aqui está como usar aliases em diferentes contextos:
+
+Alias para Tabelas:
+
+Você pode atribuir um alias a uma tabela na cláusula FROM de uma consulta. Isso é útil quando você tem que usar o nome da tabela várias vezes na consulta.
+
+Exemplo:
+
+SELECT p.nome AS produto_nome, c.nome AS categoria_nome
+FROM produtos p
+JOIN categorias c ON p.categoria_id = c.id;
+
+Neste exemplo, p e c são aliases para as tabelas produtos e categorias, respectivamente.
+
+Alias para Colunas:
+
+Você pode atribuir um alias a uma coluna na lista de seleção de uma consulta. Isso é útil quando você precisa renomear o resultado de uma expressão ou simplificar o nome da coluna.
+
+Exemplo:
+
+SELECT nome AS nome_produto, preco_unitario AS preco
+FROM produtos;
+
+Neste exemplo, nome_produto e preco são aliases para as colunas nome e preco_unitario, respectivamente.
+
+Alias para Expressões Calculadas:
+
+Você também pode usar aliases para renomear expressões calculadas na lista de seleção.
+
+Exemplo:
+
+SELECT nome, preco_unitario * quantidade AS total
+FROM itens_pedido;
+
+Neste exemplo, total é um alias para a expressão preco_unitario * quantidade, que calcula o total de cada item no pedido.
+
+Alias para Subconsultas:
+
+Em consultas que envolvem subconsultas, você pode atribuir um alias à subconsulta para referenciá-la de forma mais fácil.
+
+Exemplo:
+
+SELECT nome, (SELECT COUNT(*) FROM pedidos WHERE cliente_id = c.id) AS total_pedidos
+FROM clientes c;
+
+Neste exemplo, total_pedidos é um alias para a subconsulta que conta o número total de pedidos para cada cliente.
+
+Em resumo, aliases são usados para atribuir nomes alternativos a tabelas, colunas, expressões ou subconsultas em uma consulta SQL. Eles tornam as consultas mais legíveis e ajudam a simplificar a referência a elementos específicos da consulta.
+
+
+
+
+
+

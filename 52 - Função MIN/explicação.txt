@@ -1,0 +1,42 @@
+A função MIN() é uma função de agregação em SQL que é usada para encontrar o menor valor de uma coluna em um conjunto de resultados. Aqui está uma explicação mais detalhada:
+
+Uso Básico:
+
+MIN() é usada em consultas SQL para encontrar o menor valor de uma coluna especificada.
+Pode ser usado com vários tipos de dados, como números, datas ou strings.
+É frequentemente combinada com a cláusula GROUP BY para encontrar o menor valor para cada grupo de registros.
+
+Sintaxe:
+
+A sintaxe básica da função MIN() é a seguinte:
+
+MIN(coluna)
+Onde coluna é o nome da coluna da qual você deseja encontrar o menor valor.
+
+Exemplo:
+
+Por exemplo, considere uma tabela chamada Produtos com uma coluna Preco que armazena os preços dos produtos. Você pode usar MIN() para encontrar o preço mínimo dos produtos:
+
+SELECT MIN(Preco) AS MenorPreco FROM Produtos;
+
+Esta consulta retornará o menor valor encontrado na coluna Preco da tabela Produtos.
+
+Combinando com GROUP BY:
+
+Quando usado com GROUP BY, MIN() pode encontrar o menor valor para cada grupo de registros.
+
+Por exemplo, suponha que você tenha uma tabela chamada Pedidos com colunas Cliente e Valor, e você deseja encontrar o menor valor de pedido para cada cliente:
+
+SELECT Cliente, MIN(Valor) AS MenorValorPedido
+FROM Pedidos
+GROUP BY Cliente;
+
+Esta consulta retornará o menor valor de pedido para cada cliente na tabela Pedidos.
+Em resumo, a função MIN() é usada para encontrar o menor valor de uma coluna em um conjunto de resultados. Ela é útil para identificar o valor mínimo em conjuntos de dados, seja em uma tabela inteira ou em grupos específicos de registros.
+
+
+
+
+
+
+

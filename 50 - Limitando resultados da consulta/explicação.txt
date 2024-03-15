@@ -1,0 +1,21 @@
+Para limitar os resultados de uma consulta SQL usando MySQL, você pode usar a cláusula LIMIT. Essa cláusula permite que você especifique o número máximo de linhas que deseja retornar de uma consulta. Aqui está um exemplo simples de como usar o LIMIT:
+
+SELECT * FROM tabela
+LIMIT 10; -- Retorna as 10 primeiras linhas da tabela
+
+Neste exemplo, substitua tabela pelo nome da tabela da qual você deseja recuperar os dados e 10 pelo número de linhas que você deseja retornar.
+
+Você também pode especificar um deslocamento (offset), o que é útil quando você quer pular um número específico de linhas antes de retornar os resultados. Por exemplo:
+
+
+SELECT * FROM tabela
+LIMIT 10 OFFSET 20; -- Retorna 10 linhas, começando da 21ª linha
+
+Isso retornaria as linhas 21 a 30 da tabela.
+
+A sintaxe completa é:
+
+SELECT * FROM tabela
+LIMIT [quantidade de linhas] OFFSET [deslocamento];
+
+Lembre-se de que o OFFSET é opcional. Se você não especificar um OFFSET, a consulta retornará linhas a partir da primeira.

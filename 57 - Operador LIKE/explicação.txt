@@ -1,0 +1,38 @@
+O operador LIKE é um operador utilizado em consultas SQL para realizar comparações de padrões em strings. Ele é especialmente útil quando se deseja buscar registros que contenham partes específicas de texto ou que correspondam a um padrão definido por caracteres curinga. Aqui está uma explicação mais detalhada:
+
+Sintaxe Básica:
+
+A sintaxe básica do operador LIKE é a seguinte:
+
+coluna LIKE padrão
+
+Onde coluna é o nome da coluna em que você deseja realizar a comparação, e padrão é a sequência de caracteres que representa o padrão que você está buscando.
+
+Padrões com Curingas:
+
+O operador LIKE permite o uso de dois curingas principais:
+
+%: Representa zero, um ou vários caracteres.
+_: Representa um único caractere.
+
+Por exemplo, '%do%' corresponderá a qualquer string que contenha "do" em qualquer posição, enquanto 'a_c' corresponderá a qualquer string que comece com "a" e tenha um caractere no meio, seguido de "c".
+
+Exemplos:
+
+Para buscar todos os registros onde o nome começa com "Jo":
+SELECT * FROM Clientes WHERE Nome LIKE 'Jo%';
+
+Para buscar todos os registros onde o nome termina com "son":
+SELECT * FROM Clientes WHERE Nome LIKE '%son';
+
+Para buscar todos os registros onde o nome contenha "do" em qualquer posição:
+SELECT * FROM Clientes WHERE Nome LIKE '%do%';
+
+Uso com Outros Operadores:
+
+O operador LIKE pode ser combinado com outros operadores, como AND, OR e NOT, para formar expressões de busca mais complexas.
+Por exemplo, para buscar registros onde o nome começa com "Jo" e o sobrenome termine com "son":
+
+SELECT * FROM Clientes WHERE Nome LIKE 'Jo%' AND Sobrenome LIKE '%son';
+
+O operador LIKE é uma ferramenta poderosa para realizar buscas de padrões de texto em consultas SQL. Ele permite uma flexibilidade significativa na especificação de critérios de pesquisa em strings, tornando possível realizar consultas complexas para recuperar os registros desejados com base em padrões específicos.

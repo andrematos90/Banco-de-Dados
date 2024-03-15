@@ -1,0 +1,29 @@
+A cláusula BETWEEN em SQL é usada para filtrar os resultados de uma consulta com base em um intervalo de valores. Essa cláusula seleciona linhas onde um valor especificado está dentro de um intervalo, incluindo os valores de limite. Aqui está um exemplo de como usar a cláusula BETWEEN:
+
+Suponha que temos uma tabela chamada Produtos e queremos selecionar os produtos cujo preço está entre $10 e $50. Podemos fazer isso usando a cláusula BETWEEN da seguinte maneira:
+
+SELECT *
+FROM Produtos
+WHERE Preco BETWEEN 10 AND 50;
+
+Neste exemplo:
+
+Produtos é o nome da tabela da qual estamos selecionando os dados.
+Preco é a coluna na tabela Produtos que estamos comparando com o intervalo.
+BETWEEN 10 AND 50 especifica o intervalo de valores. Esta cláusula selecionará todas as linhas onde o valor na coluna Preco estiver entre $10 e $50, inclusive.
+Esta consulta retornará todas as linhas da tabela Produtos onde o preço do produto está entre $10 e $50.
+
+A cláusula BETWEEN pode ser combinada com os operadores AND e OR para criar condições mais complexas. Por exemplo:
+
+SELECT *
+FROM Produtos
+WHERE Categoria = 'Eletrônicos' AND Preco BETWEEN 1000 AND 2000;
+
+Neste exemplo, estamos selecionando produtos da categoria 'Eletrônicos' com preços entre $1000 e $2000.
+
+Em resumo, a cláusula BETWEEN é uma maneira conveniente de selecionar valores dentro de um intervalo em uma consulta SQL. Ela é útil em situações onde você precisa filtrar dados com base em critérios de intervalo específicos.
+
+
+
+
+

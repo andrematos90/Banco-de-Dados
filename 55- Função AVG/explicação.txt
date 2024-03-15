@@ -1,0 +1,39 @@
+A função AVG() é uma função de agregação em SQL que calcula a média de valores em uma coluna específica de um conjunto de resultados. Aqui está uma explicação mais detalhada:
+
+Uso Básico:
+
+AVG() é usada para calcular a média de valores em uma coluna especificada.
+Ela é comumente usada com colunas que contêm dados numéricos, como valores monetários, pontuações, ou outras medidas quantitativas.
+
+Sintaxe:
+A sintaxe básica da função AVG() é a seguinte:
+
+AVG(coluna)
+Onde coluna é a coluna da qual você deseja calcular a média dos valores. Se você omitir coluna, AVG() tentará calcular a média de todos os valores numéricos no conjunto de resultados.
+
+Exemplo:
+
+Por exemplo, considere uma tabela chamada Vendas que armazena o valor de vendas de produtos. Você pode usar AVG() para calcular a média das vendas:
+
+SELECT AVG(Valor) AS MediaVendas FROM Vendas;
+
+Esta consulta retornará a média dos valores de vendas da tabela Vendas.
+
+
+Combinando com outras operações:
+
+AVG() pode ser combinada com outras funções e cláusulas SQL, como WHERE, GROUP BY e HAVING, para calcular médias mais específicas ou condicionais.
+
+Por exemplo, para calcular a média de vendas para cada produto:
+
+SELECT Produto, AVG(Valor) AS MediaVendasPorProduto
+FROM Vendas
+GROUP BY Produto;
+
+Esta consulta retornará a média dos valores de vendas para cada produto na tabela Vendas.
+
+Observações:
+
+AVG() ignora valores NULL ao calcular a média.
+Se você usar AVG(DISTINCT coluna), a função calculará a média apenas dos valores distintos na coluna especificada.
+A função AVG() é uma ferramenta útil para calcular a média de valores em uma coluna, permitindo análises estatísticas simples em um conjunto de dados. Ela é comumente usada em relatórios e análises de dados para entender tendências e padrões nos valores armazenados em um banco de dados.

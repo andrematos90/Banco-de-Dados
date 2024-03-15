@@ -1,0 +1,43 @@
+A linguagem SQL oferece várias funções que permitem realizar operações complexas e manipular dados de forma eficiente. Aqui estão algumas das principais funções do SQL:
+
+Funções de Agregação:
+
+AVG(): Calcula a média dos valores em uma coluna.
+SUM(): Calcula a soma dos valores em uma coluna.
+COUNT(): Conta o número de linhas em um conjunto de resultados ou o número de valores não nulos em uma coluna.
+MIN(): Retorna o valor mínimo em uma coluna.
+MAX(): Retorna o valor máximo em uma coluna.
+Funções de Manipulação de Strings:
+
+CONCAT(): Concatena duas ou mais strings.
+SUBSTRING(): Extrai uma parte de uma string com base em uma posição inicial e um comprimento especificado.
+UPPER(): Converte uma string para maiúsculas.
+LOWER(): Converte uma string para minúsculas.
+LENGTH(): Retorna o comprimento de uma string.
+Funções de Data e Hora:
+
+NOW(): Retorna a data e a hora atuais.
+DATE(): Extrai a parte da data de uma expressão de data ou data e hora.
+MONTH(), DAY(), YEAR(): Extrai o mês, dia ou ano de uma data.
+DATEDIFF(): Calcula a diferença entre duas datas.
+DATE_ADD(), DATE_SUB(): Adiciona ou subtrai uma quantidade específica de tempo de uma data.
+Funções de Controle de Fluxo:
+
+CASE: Realiza operações condicionais.
+IF(): Retorna um valor com base em uma condição.
+Funções de Conversão de Dados:
+
+CAST(): Converte um valor de um tipo de dados para outro.
+CONVERT(): Converte um valor de um tipo de dados para outro em um formato específico.
+Funções de Agregação de Janela (Window Functions) (a partir do SQL:2003):
+
+ROW_NUMBER(): Atribui um número sequencial a cada linha de um conjunto de resultados.
+RANK(): Atribui uma classificação a cada linha de um conjunto de resultados.
+LEAD() e LAG(): Acessam dados de linhas subsequentes ou anteriores em um conjunto de resultados.
+Essas são apenas algumas das muitas funções disponíveis no SQL. Cada sistema de gerenciamento de banco de dados (SGBD) pode ter suas próprias funções específicas, além das funções padrão definidas pelo SQL.
+
+
+
+
+
+

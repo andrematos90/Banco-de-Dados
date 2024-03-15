@@ -1,0 +1,37 @@
+A função MAX() é uma função de agregação em SQL que é usada para encontrar o maior valor de uma coluna em um conjunto de resultados. Aqui está uma explicação mais detalhada:
+
+Uso Básico:
+
+MAX() é usada em consultas SQL para encontrar o maior valor de uma coluna especificada.
+
+Pode ser usado com vários tipos de dados, como números, datas ou strings.
+Assim como a função MIN(), MAX() é frequentemente combinada com a cláusula GROUP BY para encontrar o maior valor para cada grupo de registros.
+
+Sintaxe:
+
+A sintaxe básica da função MAX() é a seguinte:
+
+MAX(coluna)
+
+Onde coluna é o nome da coluna da qual você deseja encontrar o maior valor.
+
+Exemplo:
+
+Por exemplo, consideremos uma tabela chamada Produtos com uma coluna Preco que armazena os preços dos produtos. Você pode usar MAX() para encontrar o preço máximo dos produtos:
+
+SELECT MAX(Preco) AS MaiorPreco FROM Produtos;
+
+Esta consulta retornará o maior valor encontrado na coluna Preco da tabela Produtos.
+
+Combinando com GROUP BY:
+
+Quando usado com GROUP BY, MAX() pode encontrar o maior valor para cada grupo de registros.
+Por exemplo, suponha que você tenha uma tabela chamada Pedidos com colunas Cliente e Valor, e você deseja encontrar o maior valor de pedido para cada cliente:
+
+SELECT Cliente, MAX(Valor) AS MaiorValorPedido
+FROM Pedidos
+GROUP BY Cliente;
+
+Esta consulta retornará o maior valor de pedido para cada cliente na tabela Pedidos.
+
+Em resumo, a função MAX() é usada para encontrar o maior valor de uma coluna em um conjunto de resultados. Ela é útil para identificar o valor máximo em conjuntos de dados, seja em uma tabela inteira ou em grupos específicos de registros.

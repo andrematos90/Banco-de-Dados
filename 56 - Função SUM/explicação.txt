@@ -1,0 +1,46 @@
+A função SUM() é uma função de agregação em SQL que é usada para calcular a soma dos valores em uma coluna específica de um conjunto de resultados. Aqui está uma explicação mais detalhada:
+
+Uso Básico:
+
+SUM() é usada para calcular a soma dos valores em uma coluna especificada.
+É comumente usada com colunas que contêm dados numéricos, como valores monetários, quantidades de produtos vendidos, ou qualquer outra medida quantitativa.
+
+Sintaxe:
+A sintaxe básica da função SUM() é a seguinte:
+
+SUM(coluna)
+
+Onde coluna é a coluna da qual você deseja calcular a soma dos valores. Se você omitir coluna, SUM() tentará calcular a soma de todos os valores numéricos no conjunto de resultados.
+
+Exemplo:
+
+Por exemplo, considere uma tabela chamada Vendas que armazena o valor de vendas de produtos. Você pode usar SUM() para calcular a soma total das vendas:
+sql
+
+SELECT SUM(Valor) AS TotalVendas FROM Vendas;
+
+Esta consulta retornará a soma total dos valores de vendas da tabela Vendas.
+Combinando com outras operações:
+
+SUM() pode ser combinada com outras funções e cláusulas SQL, como WHERE, GROUP BY e HAVING, para calcular somas mais específicas ou condicionais.
+
+Por exemplo, para calcular a soma das vendas para cada produto:
+
+SELECT Produto, SUM(Valor) AS TotalVendasPorProduto
+FROM Vendas
+GROUP BY Produto;
+
+Esta consulta retornará a soma total dos valores de vendas para cada produto na tabela Vendas.
+
+Observações:
+
+SUM() ignora valores NULL ao calcular a soma.
+Se a coluna contiver valores não numéricos, ou se houver valores não numéricos misturados com valores numéricos, a função SUM() produzirá um erro.
+
+A função SUM() é uma ferramenta útil para calcular a soma dos valores em uma coluna, permitindo análises e cálculos relacionados a totais ou agregações de dados numéricos em um conjunto de resultados. Ela é comumente usada em relatórios financeiros, análises de vendas e em muitos outros tipos de análises de dados.
+
+
+
+
+
+
