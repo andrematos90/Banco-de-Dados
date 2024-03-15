@@ -1,0 +1,25 @@
+Em um banco de dados relacional, o relacionamento entre tabelas é uma maneira fundamental de organizar e conectar os dados. Uma das maneiras mais comuns de estabelecer esses relacionamentos é através do uso de chaves estrangeiras (foreign keys).
+
+Uma chave estrangeira é uma coluna ou um conjunto de colunas em uma tabela que estabelece uma relação com uma chave primária ou única em outra tabela. Essa relação é utilizada para conectar as linhas de uma tabela com as linhas relacionadas em outra tabela. O principal propósito das chaves estrangeiras é garantir a integridade referencial, o que significa que as relações entre as tabelas permanecem consistentes e válidas.
+
+Vamos considerar um exemplo para ilustrar melhor isso:
+
+Suponha que temos duas tabelas: Pedidos e Clientes. Cada pedido está associado a um cliente específico. Podemos usar uma chave estrangeira na tabela Pedidos para referenciar a tabela Clientes:
+
+
+CREATE TABLE Clientes (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100)
+);
+
+CREATE TABLE Pedidos (
+    id INT PRIMARY KEY,
+    cliente_id INT,
+    data_pedido DATE,
+    FOREIGN KEY (cliente_id) REFERENCES Clientes(id)
+);
+
+Neste exemplo, a coluna cliente_id na tabela Pedidos é uma chave estrangeira que referencia a coluna id na tabela Clientes. Isso significa que o valor em cliente_id em cada linha na tabela Pedidos deve corresponder a um valor válido na coluna id na tabela Clientes. Se alguém tentar inserir um pedido com um cliente_id que não existe na tabela Clientes, o banco de dados irá rejeitar essa operação devido à violação da integridade referencial.
+
+O uso de chaves estrangeiras ajuda a garantir a consistência dos dados, facilitando a manutenção de relacionamentos entre tabelas e evitando inconsistências. Além disso, eles também facilitam consultas que envolvem informações de várias tabelas, permitindo que os dados sejam relacionados e recuperados de maneira eficiente.

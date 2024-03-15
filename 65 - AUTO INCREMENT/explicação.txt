@@ -1,0 +1,30 @@
+AUTO_INCREMENT é uma propriedade específica em alguns sistemas de gerenciamento de banco de dados (DBMS), incluindo o MySQL, que permite que uma coluna de identidade seja automaticamente incrementada em cada nova inserção de registro na tabela. Essa propriedade é frequentemente associada a chaves primárias, permitindo a geração automática de valores únicos e sequenciais para essas chaves.
+
+Quando uma coluna é configurada com AUTO_INCREMENT, o banco de dados automaticamente atribui um valor para essa coluna ao inserir uma nova linha na tabela. O valor é geralmente um número inteiro incremental, começando com um valor inicial especificado (ou padrão) e incrementando em uma unidade para cada nova inserção.
+
+Vamos considerar um exemplo usando uma tabela de Produtos:
+
+CREATE TABLE Produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    preco DECIMAL(10, 2)
+);
+
+Neste exemplo, a coluna id é configurada com a propriedade AUTO_INCREMENT e também é definida como a chave primária da tabela. Isso significa que cada vez que um novo produto for inserido na tabela, o MySQL atribuirá automaticamente um valor único para a coluna id, começando a partir de 1 e incrementando em uma unidade para cada nova inserção.
+
+Ao inserir um novo registro na tabela Produtos, podemos omitir a coluna id:
+
+INSERT INTO Produtos (nome, preco) VALUES ('Camiseta', 19.99);
+
+O MySQL então automaticamente gerará um valor para a coluna id:
+
+e
++----+----------+-------+
+| id |   nome   | preco |
++----+----------+-------+
+|  1 | Camiseta | 19.99 |
++----+----------+-------+
+
+Isso simplifica a inserção de dados, pois não precisamos nos preocupar em gerar manualmente valores únicos para a chave primária. Além disso, garante que cada registro tenha uma identificação única na tabela, facilitando operações de consulta e manipulação de dados.
+
+É importante notar que o comportamento específico do AUTO_INCREMENT pode variar entre os diferentes sistemas de gerenciamento de banco de dados, e alguns DBMSs podem ter implementações semelhantes com nomes diferentes, como SERIAL no PostgreSQL.

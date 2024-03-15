@@ -1,0 +1,28 @@
+As chaves primárias (primary keys) são um conceito fundamental em bancos de dados relacionais. Uma chave primária é uma ou mais colunas em uma tabela de banco de dados que servem para identificar exclusivamente cada linha na tabela. Elas garantem a unicidade dos registros, ou seja, nenhum valor na coluna da chave primária pode ser duplicado dentro da tabela.
+
+A função principal de uma chave primária é proporcionar uma forma rápida e eficiente de acessar e manipular os dados na tabela. As operações de busca, atualização e exclusão são frequentemente realizadas com base na chave primária, pois elas garantem a identificação única de cada registro na tabela.
+
+Aqui estão algumas características importantes das chaves primárias:
+
+Unicidade: Cada valor na coluna da chave primária deve ser único em toda a tabela. Não pode haver duplicatas.
+
+Não Nulidade: Normalmente, os valores de uma chave primária não podem ser nulos. Isso garante que cada linha tenha uma chave primária definida.
+
+Identificação: As chaves primárias são usadas para identificar exclusivamente cada registro na tabela. Elas servem como um identificador único para cada linha.
+
+Índice: Geralmente, as chaves primárias são automaticamente indexadas pelo banco de dados para garantir uma recuperação rápida e eficiente dos dados.
+
+Relacionamentos: As chaves primárias são frequentemente usadas em relacionamentos entre tabelas. Em uma tabela que possui uma chave primária, essa chave pode ser usada como uma chave estrangeira em outras tabelas para estabelecer relações entre elas.
+
+Por exemplo, considere uma tabela Clientes em um banco de dados de uma loja online:
+
+CREATE TABLE Clientes (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    endereco VARCHAR(255)
+);
+
+Neste exemplo, a coluna id é definida como a chave primária da tabela Clientes. Cada cliente na tabela terá um valor único na coluna id, permitindo uma identificação única e eficiente de cada registro.
+
+Em resumo, as chaves primárias desempenham um papel crucial na modelagem de dados de bancos de dados relacionais, garantindo a integridade dos dados, facilitando a manipulação e o acesso aos registros e ajudando a estabelecer relacionamentos entre tabelas. 

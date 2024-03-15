@@ -1,0 +1,14 @@
+A restrição NOT NULL é utilizada para garantir que uma coluna em uma tabela não possa conter valores nulos. Um valor nulo em um banco de dados indica a ausência de um valor específico ou a falta de informação sobre esse valor. Porém, em alguns casos, é importante garantir que certas colunas tenham valores definidos e não sejam deixadas em branco.
+
+Ao definir uma coluna como NOT NULL, você está especificando que cada linha dessa tabela deve conter um valor válido para essa coluna. Se alguém tentar inserir ou atualizar um registro na tabela sem fornecer um valor para essa coluna, o banco de dados irá rejeitar a operação e lançar um erro.
+
+Por exemplo, considere a criação de uma tabela Funcionario com uma coluna nome que não pode ser nula:
+
+CREATE TABLE Funcionario (
+    id INT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL
+);
+
+Nesse exemplo, cada vez que alguém tentar inserir um novo funcionário na tabela Funcionario, será obrigatório fornecer um valor para a coluna nome. Se alguém tentar inserir um registro sem especificar um nome, o banco de dados irá retornar um erro.
+
+Em resumo, a restrição NOT NULL é uma forma de garantir a integridade dos dados, impedindo que valores nulos sejam inseridos em colunas onde isso não é desejado, o que pode ajudar a evitar inconsistências e erros no banco de dados.

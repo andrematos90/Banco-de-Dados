@@ -1,0 +1,41 @@
+Em SQL, as constraints (restrições) são regras definidas em uma tabela que impõem restrições sobre os dados que podem ser inseridos, atualizados ou excluídos nessa tabela. Elas garantem a integridade e consistência dos dados, ajudando a manter a precisão e a validade dos dados armazenados no banco de dados. As constraints são usadas para impor regras como chaves primárias, chaves estrangeiras, valores únicos, valores padrão e restrições de verificação.
+
+Aqui estão alguns tipos comuns de constraints em SQL, utilizando MySQL como exemplo:
+
+PRIMARY KEY: Define uma coluna ou um conjunto de colunas como chave primária, garantindo que cada linha na tabela seja única e identificável de forma única.
+
+CREATE TABLE Exemplo (
+    id INT PRIMARY KEY,
+    nome VARCHAR(50)
+);
+
+FOREIGN KEY: Define uma relação entre duas tabelas, onde a coluna especificada na tabela atual faz referência à chave primária de outra tabela.
+
+CREATE TABLE Pedido (
+    id INT PRIMARY KEY,
+    cliente_id INT,
+    FOREIGN KEY (cliente_id) REFERENCES Cliente(id)
+);
+
+UNIQUE: Garante que os valores em uma coluna ou um conjunto de colunas sejam únicos em cada linha da tabela.
+
+CREATE TABLE Produto (
+    codigo INT UNIQUE,
+    nome VARCHAR(50)
+);
+
+CHECK: Define uma condição que os valores em uma coluna devem satisfazer.
+
+CREATE TABLE Funcionario (
+    id INT,
+    salario DECIMAL(10,2) CHECK (salario > 0)
+);
+
+NOT NULL: Garante que uma coluna não possa ter valores nulos.
+
+CREATE TABLE Cliente (
+    id INT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL
+);
+
+Essas constraints ajudam a garantir a integridade dos dados no banco de dados, impedindo a inserção de dados inválidos e mantendo a consistência dos dados armazenados.

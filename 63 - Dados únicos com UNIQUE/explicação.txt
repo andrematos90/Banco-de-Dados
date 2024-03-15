@@ -1,0 +1,15 @@
+A restrição UNIQUE é utilizada para garantir que os valores em uma coluna ou em um conjunto de colunas sejam únicos em cada linha da tabela. Em outras palavras, ela impede a duplicação de valores em uma coluna específica ou em um grupo de colunas, assegurando a unicidade dos dados.
+
+Quando uma coluna é definida como UNIQUE, o banco de dados garante que nenhum par de linhas na tabela terá o mesmo valor nessa coluna (ou combinação de colunas, se múltiplas forem especificadas como únicas).
+
+Por exemplo, considere uma tabela de Clientes onde o endereço de e-mail dos clientes precisa ser único:
+
+CREATE TABLE Cliente (
+    id INT PRIMARY KEY,
+    email VARCHAR(100) UNIQUE,
+    nome VARCHAR(50)
+);
+
+Nesse caso, a restrição UNIQUE na coluna email garante que cada endereço de e-mail seja único na tabela Cliente. Se alguém tentar inserir um novo cliente com um endereço de e-mail que já existe na tabela, o banco de dados irá rejeitar essa operação e lançar um erro.
+
+Em resumo, a restrição UNIQUE é útil quando você deseja garantir que os valores em uma ou mais colunas sejam distintos em todas as linhas da tabela, ajudando a manter a integridade dos dados e evitar duplicatas.
