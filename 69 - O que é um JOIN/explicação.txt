@@ -1,0 +1,33 @@
+
+Em SQL, um JOIN é uma cláusula que é usada para combinar linhas de duas ou mais tabelas com base em uma condição relacionada entre elas. O MySQL, como muitos outros Sistemas de Gerenciamento de Banco de Dados Relacionais (SGBDR), oferece suporte a diferentes tipos de JOIN, sendo os mais comuns:
+
+INNER JOIN: Retorna apenas os registros que têm correspondência em ambas as tabelas. Ou seja, somente as linhas que satisfazem a condição de junção são retornadas.
+
+SELECT *
+FROM tabela1
+INNER JOIN tabela2 ON tabela1.coluna = tabela2.coluna;
+
+
+LEFT JOIN (ou LEFT OUTER JOIN): Retorna todos os registros da tabela da esquerda (primeira tabela especificada) e os registros correspondentes da tabela da direita (segunda tabela especificada). Se não houver correspondência, são retornados valores NULL para as colunas da tabela da direita.
+
+SELECT *
+FROM tabela1
+LEFT JOIN tabela2 ON tabela1.coluna = tabela2.coluna;
+
+
+
+RIGHT JOIN (ou RIGHT OUTER JOIN): Funciona de maneira similar ao LEFT JOIN, mas retorna todos os registros da tabela da direita (segunda tabela especificada) e os registros correspondentes da tabela da esquerda (primeira tabela especificada).
+
+SELECT *
+FROM tabela1
+RIGHT JOIN tabela2 ON tabela1.coluna = tabela2.coluna;
+
+
+FULL JOIN (ou FULL OUTER JOIN): Retorna todos os registros quando há uma correspondência em uma das tabelas. Se não houver correspondência, são retornados valores NULL para as colunas da tabela que não tem correspondência.
+
+SELECT *
+FROM tabela1
+FULL JOIN tabela2 ON tabela1.coluna = tabela2.coluna;
+
+
+Os JOINS são usados para recuperar dados relacionados de múltiplas tabelas em uma única consulta, o que é fundamental em bancos de dados relacionais para realizar consultas complexas e eficientes.

@@ -1,0 +1,26 @@
+Usar JOIN com mais de duas tabelas em SQL é bastante comum e pode ser útil para recuperar dados de várias tabelas relacionadas em uma única consulta. Isso pode ser feito adicionando mais cláusulas JOIN à consulta, conforme necessário. Aqui está um exemplo de como usar JOIN com três tabelas:
+
+Suponha que temos três tabelas: clientes, pedidos e itens_pedido. A tabela pedidos possui uma chave estrangeira que se relaciona com a tabela clientes, e a tabela itens_pedido possui uma chave estrangeira que se relaciona com a tabela pedidos. Queremos recuperar os nomes dos clientes, o número do pedido e o nome do item para cada pedido.
+
+Aqui está como você poderia fazer isso usando JOIN com três tabelas:
+
+
+SELECT clientes.nome, pedidos.numero, itens_pedido.nome_item
+FROM clientes
+JOIN pedidos ON clientes.id_cliente = pedidos.id_cliente
+JOIN itens_pedido ON pedidos.id_pedido = itens_pedido.id_pedido;
+
+Neste exemplo:
+
+clientes, pedidos e itens_pedido são os nomes das três tabelas envolvidas.
+clientes.id_cliente é a chave primária na tabela clientes e pedidos.id_cliente é a chave estrangeira na tabela pedidos que faz referência à tabela clientes.
+pedidos.id_pedido é a chave primária na tabela pedidos e itens_pedido.id_pedido é a chave estrangeira na tabela itens_pedido que faz referência à tabela pedidos.
+Cada cláusula JOIN junta duas tabelas em um momento. Portanto, neste exemplo, primeiro unimos clientes com pedidos usando JOIN, e depois unimos o resultado disso com itens_pedido usando outro JOIN.
+
+É importante observar que a ordem das cláusulas JOIN pode afetar o resultado, especialmente se você estiver usando LEFT JOIN ou RIGHT JOIN. Em alguns casos, pode ser necessário usar parênteses para garantir a ordem correta de junção.
+
+
+
+
+
+

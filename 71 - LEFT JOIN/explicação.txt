@@ -1,0 +1,23 @@
+O LEFT JOIN, também conhecido como LEFT OUTER JOIN, é um tipo de JOIN em SQL que retorna todos os registros da tabela à esquerda da cláusula JOIN, junto com os registros correspondentes da tabela à direita da cláusula JOIN. Se não houver correspondência na tabela à direita, o resultado conterá valores NULL para as colunas dessa tabela.
+
+A estrutura básica de um LEFT JOIN em SQL é a seguinte:
+
+SELECT colunas
+FROM tabela_esquerda
+LEFT JOIN tabela_direita ON tabela_esquerda.coluna = tabela_direita.coluna;
+
+Na consulta acima:
+
+tabela_esquerda é a tabela da esquerda da junção.
+tabela_direita é a tabela da direita da junção.
+ON tabela_esquerda.coluna = tabela_direita.coluna especifica a condição de junção.
+Por exemplo, se tivermos duas tabelas, clientes e pedidos, e quisermos listar todos os clientes, juntamente com quaisquer pedidos que eles tenham feito, poderíamos usar um LEFT JOIN da seguinte forma:
+
+
+SELECT clientes.nome, pedidos.numero
+FROM clientes
+LEFT JOIN pedidos ON clientes.id = pedidos.cliente_id;
+
+Nesse caso, o LEFT JOIN garantirá que todos os clientes sejam incluídos no resultado, independentemente de eles terem feito pedidos ou não. Se um cliente não tiver feito nenhum pedido, as colunas relacionadas à tabela pedidos no resultado conterão valores NULL.
+
+O LEFT JOIN é útil quando você deseja garantir que todos os registros da tabela da esquerda sejam incluídos no resultado, mesmo que não haja correspondência na tabela da direita. Isso pode ser útil em situações em que você precisa listar todos os registros de uma tabela principal, juntamente com quaisquer registros relacionados de uma tabela secundária.

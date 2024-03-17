@@ -1,0 +1,24 @@
+
+Sim, além do INNER JOIN, LEFT JOIN (ou LEFT OUTER JOIN) e RIGHT JOIN (ou RIGHT OUTER JOIN), há também o FULL JOIN (ou FULL OUTER JOIN) e CROSS JOIN. Vou explicar brevemente cada um deles:
+
+FULL JOIN (ou FULL OUTER JOIN):
+O FULL JOIN retorna todos os registros quando há uma correspondência em uma das tabelas. Ou seja, ele retorna todas as linhas da tabela à esquerda e da tabela à direita da junção, incluindo as linhas que não têm correspondência na outra tabela. Se não houver correspondência, as colunas da tabela sem correspondência terão valores NULL.
+
+
+SELECT *
+FROM tabela1
+FULL JOIN tabela2 ON tabela1.coluna = tabela2.coluna;
+
+
+
+CROSS JOIN:
+
+O CROSS JOIN retorna o produto cartesiano de duas tabelas, ou seja, combina cada linha de uma tabela com todas as linhas da outra tabela. Isso resulta em um número de linhas igual ao número de linhas na primeira tabela multiplicado pelo número de linhas na segunda tabela.
+
+
+SELECT *
+FROM tabela1
+CROSS JOIN tabela2;
+
+
+Estes são os tipos de JOIN mais comuns em SQL, cada um com sua própria utilidade e aplicação em diferentes cenários de consulta. É importante entender como cada tipo de JOIN funciona e quando usá-los para obter os resultados desejados em suas consultas SQL.

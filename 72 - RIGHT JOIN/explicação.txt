@@ -1,0 +1,24 @@
+
+O RIGHT JOIN, também conhecido como RIGHT OUTER JOIN, é um tipo de JOIN em SQL que é o oposto do LEFT JOIN. Enquanto o LEFT JOIN retorna todos os registros da tabela à esquerda da cláusula JOIN e os registros correspondentes da tabela à direita, o RIGHT JOIN retorna todos os registros da tabela à direita e os registros correspondentes da tabela à esquerda. Se não houver correspondência na tabela à esquerda, o resultado conterá valores NULL para as colunas dessa tabela.
+
+A estrutura básica de um RIGHT JOIN em SQL é semelhante à de um LEFT JOIN:
+
+SELECT colunas
+FROM tabela_esquerda
+RIGHT JOIN tabela_direita ON tabela_esquerda.coluna = tabela_direita.coluna;
+
+Na consulta acima:
+
+tabela_esquerda é a tabela à esquerda da junção.
+tabela_direita é a tabela à direita da junção.
+ON tabela_esquerda.coluna = tabela_direita.coluna especifica a condição de junção.
+
+Por exemplo, se tivermos duas tabelas, pedidos e clientes, e quisermos listar todos os pedidos, juntamente com os detalhes dos clientes associados (se houver), poderíamos usar um RIGHT JOIN da seguinte forma:
+
+SELECT clientes.nome, pedidos.numero
+FROM pedidos
+RIGHT JOIN clientes ON pedidos.cliente_id = clientes.id;
+
+Neste exemplo, o RIGHT JOIN garantirá que todos os pedidos sejam incluídos no resultado, independentemente de estarem associados a um cliente ou não. Se um pedido não estiver associado a nenhum cliente (o que normalmente não é desejável em um sistema de pedidos), as colunas relacionadas à tabela clientes no resultado conterão valores NULL.
+
+O RIGHT JOIN é menos comum do que o LEFT JOIN na prática, uma vez que muitos bancos de dados e consultas são estruturados de forma a selecionar dados principalmente da tabela principal (à esquerda) e incluir tabelas secundárias conforme necessário. No entanto, o RIGHT JOIN é útil em situações específicas em que a lógica da consulta exige que os registros da tabela à direita sejam preservados, independentemente de existirem correspondências na tabela à esquerda.
