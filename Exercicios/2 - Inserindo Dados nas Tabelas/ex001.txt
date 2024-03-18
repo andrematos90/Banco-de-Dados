@@ -1,0 +1,32 @@
+Agora que você criou as tabelas para o banco de dados da biblioteca, é necessário inserir dados para preencher essas tabelas. Você deve inserir informações sobre livros, autores, usuários e empréstimos de acordo com as especificações abaixo:
+
+Inserir Livros:
+Você deve inserir informações sobre pelo menos cinco livros diferentes na tabela books. Para cada livro, inclua o título, ano de publicação, nome do autor e quantidade de cópias disponíveis.
+
+Inserir Autores:
+Insira informações sobre pelo menos três autores diferentes na tabela authors. Para cada autor, inclua o nome, sobrenome, data de nascimento e nacionalidade.
+
+Inserir Usuários:
+Insira informações sobre pelo menos três usuários diferentes na tabela users. Para cada usuário, inclua o nome, e-mail, telefone e endereço.
+
+Realizar Empréstimos:
+Simule pelo menos três empréstimos na tabela loans. Para cada empréstimo, selecione um livro da tabela books, um usuário da tabela users e defina a data de empréstimo e a data de retorno prevista.
+
+Lembre-se de seguir as restrições de integridade referencial e assegurar que os dados inseridos estejam consistentes e de acordo com as definições das tabelas. Após inserir os dados, você pode realizar consultas para verificar se os registros foram inseridos corretamente.
+
+USE library;
+
+INSERT INTO authors(author_name, last_name, birth_date, nationality) VALUES ("Robert", "B. Cialdini", "1967/02/13", "American");
+INSERT INTO authors(author_name, last_name, birth_date, nationality) VALUES ("Patrick", "de Witt", "1956/05/26", "American");
+INSERT INTO authors(author_name, last_name, birth_date, nationality) VALUES ("Machado", "De Assis", "1839/06/21", "Brazilian");
+
+INSERT INTO books(title, publication_year, author, available_copies) VALUES ("MINDSET", "2008/03/25", "Robert B. Cialdini", 50256);
+INSERT INTO books(title, publication_year, author, available_copies) VALUES ("The Sisters Brothers", "2018/05/12", "Patrick de Witt", 100);
+INSERT INTO books(title, publication_year, author, available_copies) VALUES ("Dom Casmurro", "1898/03/12", "Machado de Assis", 30);
+
+INSERT INTO users(user_name, email, phone, address) VALUES ("André Matos", "andrermatos90@gmail.com", "988270641", "Rua Engelberto Otto Hagmann");
+INSERT INTO users(user_name, email, phone, address) VALUES ("Binho", "binho90@gmail.com", "988270642", "Rua Engelberto Otto Hagmann");
+INSERT INTO users(user_name, email, phone, address) VALUES ("Oilson", "OilsondeMatos@gmail.com", "991623734", "Rua Engelberto Otto Hagmann");
+
+INSERT INTO loans(id_book, id_user, date_loan, return_date) VALUES (3, 1, "2024/03/18", "2024/03/25");
+INSERT INTO loans(id_book, id_user, date_loan, return_date) VALUES (2, 2, "2024/03/18", "2024/03/28");

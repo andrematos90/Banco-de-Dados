@@ -1,0 +1,58 @@
+Você foi contratado para desenvolver um sistema de gerenciamento de uma biblioteca universitária. O sistema deve permitir o controle de livros, autores, usuários e empréstimos. Para isso, você deve criar um banco de dados relacional utilizando SQL.
+
+O banco de dados deve conter as seguintes entidades:
+
+Livros: Deve armazenar informações sobre os livros disponíveis na biblioteca, como título, ISBN, ano de publicação e quantidade de exemplares disponíveis.
+
+Autores: Deve armazenar informações sobre os autores dos livros, como nome, data de nascimento e nacionalidade.
+
+Usuários: Deve armazenar informações sobre os usuários da biblioteca, como nome, e-mail, telefone e endereço.
+
+Empréstimos: Deve armazenar informações sobre os empréstimos realizados na biblioteca, incluindo o livro emprestado, o usuário que realizou o empréstimo, a data de retirada e a data de devolução prevista.
+
+Além disso, o sistema deve ser capaz de realizar as seguintes operações:
+
+Inserir novos livros, autores, usuários e empréstimos.
+Atualizar informações de livros, autores, usuários e empréstimos.
+Remover livros, autores, usuários e empréstimos.
+Consultar informações sobre livros disponíveis, autores, usuários e empréstimos realizados.
+Desenvolva o modelo conceitual, o modelo lógico e implemente o banco de dados utilizando SQL, considerando as regras de integridade referencial necessárias para garantir a consistência dos dados.
+
+CREATE DATABASE library;
+
+USE library;
+
+CREATE TABLE books(
+id_book INT PRIMARY KEY AUTO_INCREMENT,
+title VARCHAR(100),
+publication_year DATE,
+author VARCHAR(50),
+avaibles_copies INT
+);
+
+CREATE TABLE authors(
+id_author INT PRIMARY KEY AUTO_INCREMENT,
+author_name VARCHAR(50),
+lasta_name VARCHAR(50),
+birth_date DATE,
+nationality VARCHAR(50)
+);
+
+CREATE TABLE users(
+id_user INT PRIMARY KEY AUTO_INCREMENT,
+user_name VARCHAR(50),
+email VARCHAR(50) UNIQUE,
+phone VARCHAR(50) UNIQUE,
+address VARCHAR(100)
+);
+
+CREATE TABLE loans(
+id INT PRIMARY KEY AUTO_INCREMENT,
+id_book INT(100),
+id_user INT(100),
+date_loan DATE,
+return_date DATE,
+FOREIGN KEY (id_book) REFERENCES books(id_book),
+FOREIGN KEY  (id_user) REFERENCES users(id_user)
+);
+

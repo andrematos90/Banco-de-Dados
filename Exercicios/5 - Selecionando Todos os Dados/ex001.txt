@@ -1,0 +1,10 @@
+Você foi designado para revisar todos os dados armazenados no banco de dados da biblioteca. Sua tarefa é escrever e executar uma consulta SQL para selecionar todos os dados de todas as tabelas no banco de dados.
+
+Seu objetivo é garantir que todos os registros sejam exibidos corretamente e que não haja nenhum problema nos dados armazenados. Certifique-se de verificar cada tabela individualmente e garantir que todos os campos estejam sendo recuperados.
+
+Após executar a consulta, revise os resultados para garantir que todas as informações estejam corretas e consistentes. Se necessário, faça ajustes na consulta para incluir informações adicionais ou filtrar os resultados de acordo com requisitos específicos.
+
+SELECT * FROM authors
+INNER JOIN books ON authors.author_name = books.author
+INNER JOIN loans ON books.id_book = loans.id_book
+INNER JOIN users ON loans.id_user = users.id_user;

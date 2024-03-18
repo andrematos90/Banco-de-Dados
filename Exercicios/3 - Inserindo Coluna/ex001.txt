@@ -1,0 +1,20 @@
+A biblioteca está atualizando seu sistema para incluir uma nova funcionalidade que permite rastrear a data de retorno real de cada empréstimo. Para isso, você deve adicionar uma nova coluna à tabela de empréstimos chamada actual_return_date, que armazenará a data em que o livro foi devolvido de fato.
+
+Seu objetivo é escrever e executar uma instrução SQL para adicionar essa nova coluna à tabela de empréstimos no banco de dados da biblioteca.
+
+Certifique-se de que a nova coluna seja do tipo DATE para armazenar as datas de retorno e que não aceite valores nulos. Além disso, após adicionar a nova coluna, execute uma consulta para garantir que a alteração tenha sido aplicada corretamente.
+
+Após realizar essa tarefa, você pode considerar a atualização do script de inserção de dados para incluir a data de retorno real dos empréstimos já realizados.
+
+
+ALTER TABLE loans
+ADD COLUMN actual_return_date DATE NOT NULL DEFAULT '0001/01/01/';
+
+
+
+outro exemplo:
+
+ALTER TABLE users
+ADD COLUMN actua_return_date DATE;
+
+

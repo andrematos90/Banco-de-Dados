@@ -1,0 +1,16 @@
+A biblioteca decidiu simplificar seu sistema e remover a coluna que armazena a data de retorno real de cada empréstimo. Para isso, você deve escrever e executar uma instrução SQL para remover a coluna actual_return_date da tabela de empréstimos.
+
+Seu objetivo é garantir que a remoção da coluna seja feita de forma segura e sem perder nenhum dado importante. Certifique-se de considerar possíveis impactos nos processos existentes e, se necessário, atualize quaisquer consultas ou scripts que dependam dessa coluna.
+
+Após realizar essa tarefa, verifique se a coluna foi removida corretamente executando uma consulta para exibir a estrutura atualizada da tabela de empréstimos.
+
+Lembre-se de documentar todas as etapas realizadas para a remoção da coluna e quaisquer ajustes feitos em consultas ou scripts relacionados.
+
+ALTER TABLE loans
+DROP COLUMN actual_return_date;
+SELECT * FROM loans
+
+
+
+
+

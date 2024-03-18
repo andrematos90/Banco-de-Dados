@@ -1,0 +1,18 @@
+Você foi solicitado a gerar um relatório específico com informações sobre os empréstimos realizados na biblioteca. Sua tarefa é escrever e executar uma consulta SQL para selecionar colunas específicas de interesse da tabela de empréstimos.
+
+As informações necessárias para o relatório são:
+
+Nome do usuário que realizou o empréstimo.
+Título do livro emprestado.
+Data de empréstimo.
+Data de retorno prevista.
+
+Escreva uma consulta SQL que selecione apenas essas colunas da tabela de empréstimos e inclua uma condição adicional, se necessário, para filtrar os resultados de acordo com os requisitos do relatório.
+
+Após executar a consulta, revise os resultados para garantir que todas as informações solicitadas estejam presentes e que os dados estejam corretos. Se necessário, ajuste a consulta para atender a requisitos adicionais do relatório.
+
+USE library;
+
+SELECT users.user_name, books.title, loans.date_loan, loans.return_date FROM loans
+INNER JOIN users ON loans.id_user = users.id_user 
+INNER JOIN books ON loans.id_book = books.id_book;
