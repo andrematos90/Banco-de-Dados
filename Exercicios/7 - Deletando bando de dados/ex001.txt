@@ -1,0 +1,8 @@
+- Crie um banco de dados com o nome de "computador";
+- verifique se o banco foi criado.
+- Remova o banco.
+
+
+CREATE DATABASE computador;
+SHOW DATABASES;
+DROP DATABASE computador;

@@ -1,0 +1,4 @@
+- crie um banco de dados:
+
+
+CREATE DATABASE teste;

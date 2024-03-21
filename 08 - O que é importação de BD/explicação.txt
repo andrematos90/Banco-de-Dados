@@ -15,7 +15,7 @@ Desenvolvimento e Teste: Importação de dados de produção para ambientes de d
 O método exato de importação de um banco de dados pode variar dependendo do SGBD específico que você está usando e do formato dos dados de origem. Alguns SGBDs fornecem ferramentas integradas ou suporte para importação de dados de formatos comuns, enquanto em outros casos, pode ser necessário usar ferramentas de terceiros ou escrever scripts personalizados para realizar a importação.
 
 
-Importando na Prática: 
+Importando na Prática MySQL: 
 
 ● Obs: faça o download dos arquivos do curso!
 baixar em https://github.com/matheusbattisti/curso_sql/blob/main/1_intro/empresa.sql
@@ -31,5 +31,6 @@ ou
 ● E depois utilizar o comando: source <arquivo>
 - "source empresa.sql" para criar as tabelas
 
+Obs:
 ● O comando USE faz o banco de dados ser o principal no momento;
 ● Precisamos estar com o terminal na pasta do arquivo;

@@ -1,0 +1,4 @@
+selecionando todos os dados da tabela "servicos"
+
+
+SELECT * FROM servicos;

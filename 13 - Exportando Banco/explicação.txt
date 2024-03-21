@@ -6,6 +6,7 @@ Use o seguinte comando, substituindo nome_do_banco_de_dados pelo nome do banco d
 
 
 mysqldump -u usuario -p nome_do_banco_de_dados > nome_do_arquivo.sql
+
 -u usuario: Substitua usuario pelo nome de usuário do MySQL com permissão para acessar o banco de dados.
 -p: Isso solicitará a senha do usuário do MySQL após a execução do comando.
 nome_do_banco_de_dados: Substitua pelo nome do banco de dados que você deseja exportar.
@@ -14,6 +15,7 @@ Por exemplo, se você quiser exportar um banco de dados chamado "meu_banco_de_da
 
 
 mysqldump -u root -p meu_banco_de_dados > backup.sql
+
 Depois de executar este comando e inserir a senha quando solicitado, o arquivo backup.sql conterá o backup do banco de dados especificado.
 
 Lembre-se de que o mysqldump apenas cria um arquivo SQL com os comandos SQL para recriar o banco de dados. Não faz uma cópia binária completa do banco de dados.
